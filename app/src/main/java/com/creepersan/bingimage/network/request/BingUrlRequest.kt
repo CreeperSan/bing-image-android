@@ -15,6 +15,8 @@ interface BingUrlRequest{
     @GET("/api/v1/url")
     fun getBingUrl(@Query("count") count:Int=12):Call<BingUrlResponse>
 
+    @GET("/api/v1/random")
+    fun getBingRandom(@Query("count") count:Int=3):Call<BingUrlResponse>
 
 
 }
