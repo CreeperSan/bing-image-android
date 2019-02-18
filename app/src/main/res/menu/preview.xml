@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            app:showAsAction="always"
+            android:title="@string/previewMenuImageScale"
+            android:id="@+id/menuPreviewImageScale"
+            android:icon="@drawable/ic_preview_scale"/>
+
+    <item
+            app:showAsAction="always"
+            android:title="@string/previewMenuScreenResolution"
+            android:id="@+id/menuPreviewScreenResolution"
+            android:icon="@drawable/ic_preview_screen_resolution_white"/>
+
+</menu>

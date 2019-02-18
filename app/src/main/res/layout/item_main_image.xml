@@ -2,13 +2,46 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              android:layout_width="match_parent"
                                              android:layout_height="wrap_content"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
+            tools:src="@drawable/ic_launcher_background"
             android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/itemMainImageImage"
             android:layout_width="match_parent"
             android:layout_height="240dp"/>
+
+    <TextView
+            android:id="@+id/itemMainImageTitle"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:autoSizeTextType="uniform"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#000000"
+            android:lines="1"
+            android:textSize="100sp"
+            android:shadowRadius="16"
+            tools:text="史前洞窟壁画国际艺术中心内的“高仿”拉斯科洞穴壁画"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+
+    <TextView
+            android:id="@+id/itemMainImageTime"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toTopOf="@id/itemMainImageTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#000000"
+            android:lines="1"
+            android:textSize="12sp"
+            android:shadowRadius="16"
+            tools:text="2018/03/18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
 </android.support.constraint.ConstraintLayout>

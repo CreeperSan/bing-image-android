@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/dialogPreviewDownloadRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    <CheckBox
+            android:layout_marginTop="8dp"
+            android:id="@+id/dialogPreviewDownloadCheckBox"
+            android:text="@string/previewDownloadDialogCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:text="@string/previewDownloadDialogHint"
+            android:id="@+id/dialogPreviewDownloadHintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

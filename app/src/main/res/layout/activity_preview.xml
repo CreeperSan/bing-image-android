@@ -1,97 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+                                             xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
+            android:transitionName="image"
+            android:id="@+id/previewImageView"
             android:src="@drawable/ic_launcher_background"
             android:scaleType="centerCrop"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-    <ImageView
-            android:src="@drawable/ic_preview_back"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:id="@+id/previewBackIcon"
-            android:padding="6dp"
-            android:layout_width="64dp"
-            android:layout_height="?attr/actionBarSize"/>
-
-    <android.support.v7.widget.CardView
-            android:layout_margin="6dp"
-            android:background="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-        <LinearLayout
-                android:layout_marginTop="8dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/previewToolbar"
+            android:background="#33000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_preview_back_white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
 
-            <LinearLayout
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/previewDownload"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_file_download_white"
+            app:rippleColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-                <TextView
-                        android:textSize="20sp"
-                        android:textAllCaps="true"
-                        android:text="Quality"
-                        android:layout_width="wrap_content"
-                        android:layout_height="26sp"/>
+    <TextView
+            android:transitionName="title"
+            android:shadowColor="#000000"
+            android:shadowRadius="16"
+            android:maxLines="2"
+            android:id="@+id/previewTitle"
+            android:textSize="18sp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/previewLocation"
+            app:layout_constraintEnd_toStartOf="@id/previewDownload"
+            tools:text="史前洞窟壁画国际艺术中心内的“高仿”拉斯科洞穴壁画"
+            android:textColor="#ffffff"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
 
-                <android.support.v7.widget.RecyclerView
-                        android:layout_marginStart="8dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="26sp"/>
+    <TextView
+            android:shadowColor="#000000"
+            android:shadowRadius="16"
+            app:autoSizeTextType="uniform"
+            android:lines="1"
+            android:layout_marginBottom="6dp"
+            android:id="@+id/previewLocation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/previewAuthor"
+            app:layout_constraintEnd_toStartOf="@id/previewDownload"
+            tools:text="法国蒙蒂尼亚克"
+            android:textColor="#ffffff"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
 
-            </LinearLayout>
-
-            <TextView
-                    android:textSize="20sp"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:text="Title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            <TextView
-                    android:textSize="20sp"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:text="Location"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            <TextView
-                    android:autoSizeTextType="uniform"
-                    android:textSize="20sp"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:text="Author"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            <TextView
-                    android:textAllCaps="true"
-                    android:padding="16dp"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
-                    android:text="Download Now"
-                    android:background="#000000"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-    </android.support.v7.widget.CardView>
+    <TextView
+            android:shadowColor="#000000"
+            android:shadowRadius="16"
+            android:textSize="12sp"
+            app:autoSizeTextType="uniform"
+            android:lines="1"
+            android:id="@+id/previewAuthor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/previewDownload"
+            tools:text="Caroline Blumberg/Epa/Shutterstock"
+            android:textColor="#ffffff"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
 
 </android.support.constraint.ConstraintLayout>

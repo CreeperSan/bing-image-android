@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">Bing Image</string>
+
+    <string name="mainSnackLoading">正在加载数据</string>
+    <string name="mainSnackNetworkError">网络连接失败，请检查您的网路连接</string>
+    <string name="mainSnackRequestFail">与服务器通讯失败，请稍后重试</string>
+    <string name="mainSnackLoadAllFinish">已加载全部数据</string>
+
+    <string name="previewMenuScreenResolution">预览分辨率</string>
+    <string name="previewMenuImageScale">图片缩放模式</string>
+    <string name="previewResolution1920x1200">1920×1200</string>
+    <string name="previewResolution1920x1080">1920×1080</string>
+    <string name="previewResolution1366x768">1366×768</string>
+    <string name="previewResolution1280x720">1280×720</string>
+    <string name="previewResolution1024x768">1024×768</string>
+    <string name="previewResolution800x600">800×600</string>
+    <string name="previewResolution800x480">800×480</string>
+    <string name="previewResolution640x480">640×480</string>
+    <string name="previewResolution400x240">400×240</string>
+    <string name="previewResolution320x240">320×240</string>
+    <string name="previewResolution1080x1920">1080×1920</string>
+    <string name="previewResolution768x1366">768×1366</string>
+    <string name="previewResolution768x1280">768×1280</string>
+    <string name="previewResolution720x1280">720×1080</string>
+    <string name="previewResolution480x800">480×800</string>
+    <string name="previewResolution480x640">480×640</string>
+    <string name="previewResolution240x400">240×400</string>
+    <string name="previewResolution240x320">240×320</string>
+    <string name="previewResolutionUnknown">未知分辨率</string>
+    <string name="previewScaleCenterCrop">Center Crop</string>
+    <string name="previewScaleCenter">Center</string>
+    <string name="previewScaleCenterInside">Center Inside</string>
+    <string name="previewScaleFitCenter">Fit Center</string>
+    <string name="previewScaleFitEnd">Fit End</string>
+    <string name="previewScaleFitStart">Fit Start</string>
+    <string name="previewScaleFitXY">Fit XY</string>
+    <string name="previewScaleMatrix">Matrix</string>
+    <string name="previewDownloadDialogHint">你可以长按下载按钮重新打开此对话框</string>
+    <string name="previewDownloadDialogCheckbox">下次不再显示</string>
+    <string name="previewDownloadDialogTitle">下载图片</string>
+    <string name="previewDownloadDialogPosButtonText">下载</string>
+    <string name="previewDownloadDialogNegButtonText">取消</string>
 </resources>

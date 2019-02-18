@@ -13,10 +13,14 @@ import java.io.File
 interface BingUrlRequest{
 
     @GET("/api/v1/url")
-    fun getBingUrl(@Query("count") count:Int=12):Call<BingUrlResponse>
+    fun getBingUrl(@Query("count") count:Int=12, @Query("page") page:Int=12):Call<BingUrlResponse>
 
     @GET("/api/v1/random")
     fun getBingRandom(@Query("count") count:Int=3):Call<BingUrlResponse>
+
+    @Streaming
+    @GET("api/v1/download/{date}.jpg")
+    fun download(@Path("date") date:Int, @Query("size") size:Int):Call<ResponseBody>
 
 
 }
