@@ -8,11 +8,6 @@
 
     <item
             app:showAsAction="never"
-            android:title="@string/previewScaleCenter"
-            android:id="@+id/menuPreviewScaleCenter"/>
-
-    <item
-            app:showAsAction="never"
             android:title="@string/previewScaleCenterInside"
             android:id="@+id/menuPreviewScaleCenterInside"/>
 
@@ -21,24 +16,5 @@
             android:title="@string/previewScaleFitCenter"
             android:id="@+id/menuPreviewScaleFitCenter"/>
 
-    <item
-            app:showAsAction="never"
-            android:title="@string/previewScaleFitStart"
-            android:id="@+id/menuPreviewScaleFitStart"/>
-
-    <item
-            app:showAsAction="never"
-            android:title="@string/previewScaleFitEnd"
-            android:id="@+id/menuPreviewScaleFitEnd"/>
-
-    <item
-            app:showAsAction="never"
-            android:title="@string/previewScaleFitXY"
-            android:id="@+id/menuPreviewScaleFitXY"/>
-
-    <item
-            app:showAsAction="never"
-            android:title="@string/previewScaleMatrix"
-            android:id="@+id/menuPreviewScaleMatrix"/>
 
 </menu>

@@ -1,6 +1,7 @@
 package com.creepersan.bingimage.file
 
 import android.os.Environment
+import com.creepersan.bingimage.database.bean.BingImage
 import java.io.File
 
 class FileManager {
@@ -19,6 +20,10 @@ class FileManager {
         }else{
             this.mkdirs()
         }
+    }
+
+    private fun getCacheImageFile(date:Int, resolution:BingImage.Resolution):File{
+        return File("${cacheFolder.path}/$date/${resolution.value}")
     }
 
 }

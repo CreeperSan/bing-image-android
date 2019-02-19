@@ -45,7 +45,7 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
         val popupMenu = PopupMenu(this, previewToolbar.findViewById(R.id.menuPreviewScreenResolution))
         popupMenu.menuInflater.inflate(R.menu.preview_resolution ,popupMenu.menu)
         popupMenu.setOnMenuItemClickListener {
-            mViewModel.previewResolution.value = when(it.itemId){
+            mViewModel.setPreviewResolution(when(it.itemId){
                 R.id.menuPreviewResolution1920x1200 -> BingImage.Resolution.L_1920_1200
                 R.id.menuPreviewResolution1920x1080 -> BingImage.Resolution.L_1920_1080
                 R.id.menuPreviewResolution1366x768 -> BingImage.Resolution.L_1366_768
@@ -65,8 +65,8 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
                 R.id.menuPreviewResolution240x400 -> BingImage.Resolution.P_240_400
                 R.id.menuPreviewResolution240x320 -> BingImage.Resolution.P_240_320
                 else -> BingImage.Resolution.L_1920_1080
-            }
-            true
+            })
+            return@setOnMenuItemClickListener true
         }
         popupMenu
     }
@@ -75,14 +75,9 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
         popupMenu.menuInflater.inflate(R.menu.preview_scale ,popupMenu.menu)
         popupMenu.setOnMenuItemClickListener {
             mViewModel.imageScale.value = when(it.itemId){
-                R.id.menuPreviewScaleCenter -> ImageView.ScaleType.CENTER
                 R.id.menuPreviewScaleCenterCrop -> ImageView.ScaleType.CENTER_CROP
                 R.id.menuPreviewScaleCenterInside -> ImageView.ScaleType.CENTER_INSIDE
                 R.id.menuPreviewScaleFitCenter -> ImageView.ScaleType.FIT_CENTER
-                R.id.menuPreviewScaleFitEnd -> ImageView.ScaleType.FIT_END
-                R.id.menuPreviewScaleFitStart -> ImageView.ScaleType.FIT_START
-                R.id.menuPreviewScaleFitXY -> ImageView.ScaleType.FIT_XY
-                R.id.menuPreviewScaleMatrix -> ImageView.ScaleType.MATRIX
                 else -> ImageView.ScaleType.CENTER_CROP
             }
             true
@@ -114,7 +109,7 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
             BingImage.Resolution.L_320_240
         ))
         dialogCheckBox.setOnClickListener {
-            mViewModel.isDownloadDialogDefaultNotDisplay.value = dialogCheckBox.isChecked
+            mViewModel.setDownloadDialogDefaultNotDisplay(dialogCheckBox.isChecked)
         }
         val alertDialog = AlertDialog.Builder(this)
             .setTitle(R.string.previewDownloadDialogTitle)
@@ -128,21 +123,9 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
             }
             .create()
         val obj = object {
-            fun setNotDisplayDialog(state:Boolean){
-                dialogCheckBox.isChecked = state
-            }
-
-            fun isNotDisplayDialog():Boolean{
-                return dialogCheckBox.isChecked
-            }
-
             fun showDialog(){
-                dialogCheckBox.isChecked = mViewModel.isDownloadDialogDefaultNotDisplay.value ?: false
+                dialogCheckBox.isChecked = mViewModel.isDownloadDialogDefaultNotDisplay()
                 alertDialog.show()
-            }
-
-            fun hideDialog(){
-                alertDialog.dismiss()
             }
         }
         return@lazy obj
@@ -162,7 +145,7 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
     private fun initLiveData(){
         mViewModel.bingImage.observe(this, mBingImageObserver)
         mViewModel.imageScale.observe(this, mImageScaleObserver)
-        mViewModel.previewResolution.observe(this, mImagePreviewResolutionObserver)
+        mViewModel.observerPreviewResolution(this, mImagePreviewResolutionObserver)
     }
 
     private fun initData(){
@@ -179,7 +162,7 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
     private fun initFloatingActionButton(){
         previewDownload.setOnClickListener {
-            if (true == mViewModel.isDownloadDialogDefaultNotDisplay.value){ // 默认不显示
+            if (mViewModel.isDownloadDialogDefaultNotDisplay()){ // 默认不显示
                 downloadImage()
             }else{ // 默认显示
                 mDownloadDialog.showDialog()
@@ -213,49 +196,10 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
         val bingimage = mViewModel.bingImage.value!!
         val resolution = mViewModel.getDownloadResolution()
         val url = bingimage.getImageUrl(resolution)
-        toast("下载图片分辨率${resolution.toResolutionStringID().toResString()} $url")
+        toast(R.string.previewToastDownload.toResString())
 
+        application.downloadImage(bingimage, resolution)
 
-        retrofit.create(BingUrlRequest::class.java)
-            .download(bingimage.date, mViewModel.getDownloadResolution().value)
-            .enqueue(object : Callback<ResponseBody> {
-                override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                    toast("失败了")
-                }
-
-                override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                    if (response.isSuccessful){
-
-                        Thread(){
-                            val file = File("${Environment.getExternalStorageDirectory().path}/${System.currentTimeMillis()}.jpg")
-
-                            val inputSteam = response.body()!!.byteStream()
-                            val outputSteam = file.outputStream()
-
-                            val byteArray = ByteArray(4096) {0}
-                            var len = 0
-
-                            while ( true){
-                                len = inputSteam.read(byteArray)
-                                if (len != -1){
-                                    outputSteam.write(byteArray, 0, len)
-                                }else{
-                                    break
-                                }
-                            }
-                            runOnUiThread { toast("下载完成了") }
-                        }.start()
-
-
-
-
-                    }else{
-                        toast("出错了")
-                    }
-                }
-
-
-            })
     }
 
     /* Adapter */
@@ -282,7 +226,7 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
                     }
                 }
 
-                mViewModel.downloadResolution.value = item
+                mViewModel.setDownloadResolution(item)
 
                 notifyItemChanged(prevPos)
                 notifyItemChanged(newPos)
@@ -292,11 +236,8 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
     }
 
     /* Action */
-    private fun refreshImageScale(){
-        previewImageView.scaleType = mViewModel.getImageScaleType()
-    }
     private fun refreshImageResolution(){
-        previewImageView.setImageGlide(mViewModel.getPreviewImageUrl())
+        previewImageView.setImageGlide(mViewModel.getPreviewImageUrl(), R.drawable.image_main_default, R.drawable.image_main_fail, mViewModel.getImageScaleType())
     }
 
     /* Observer */
@@ -307,7 +248,7 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
     }
     private inner class ImageScaleObserver : Observer<ImageView.ScaleType>{
         override fun onChanged(t: ImageView.ScaleType?) {
-            refreshImageScale()
+            refreshImageResolution()
         }
     }
     private inner class BingImageObserver : Observer<BingImage?>{
@@ -322,3 +263,11 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
     }
 
 }
+
+//int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200, mContext.getResources().getDisplayMetrics());
+//int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200f, mContext.getResources().getDisplayMetrics());
+//---------------------
+//作者：aptentity
+//来源：CSDN
+//原文：https://blog.csdn.net/aptentity/article/details/64126363
+//版权声明：本文为博主原创文章，转载请附上博文链接！

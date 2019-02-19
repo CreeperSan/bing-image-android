@@ -5,6 +5,21 @@
     <string name="mainSnackNetworkError">网络连接失败，请检查您的网路连接</string>
     <string name="mainSnackRequestFail">与服务器通讯失败，请稍后重试</string>
     <string name="mainSnackLoadAllFinish">已加载全部数据</string>
+    <string name="mainDrawerHeaderHint">٩̋(๑˃́ꇴ˂̀๑) 每天新壁纸</string>
+    <string name="mainDrawerSelectionBing">必应</string>
+    <string name="mainDrawerSelectionGallery">图库</string>
+    <string name="mainDrawerSelectionInfo">关于</string>
+    <string name="mainDrawerSelectionHelp">帮助</string>
+    <string name="mainDrawerSelectionExit">退出</string>
+    <string name="mainDrawerSelectionWebsite">访问网页版</string>
+    <string name="mainDrawerSelectionSetting">设置</string>
+    <string name="mainDrawerSelectionFeedback">反馈</string>
+    <string name="mainFeedbackMailTitle">Android BingImage 反馈 : 请在这里输入问题名称</string>
+    <string name="mainFeedbackMailContentTemple">
+        问题描述\n\n\n
+        操作步骤\n\n\n
+        问题引起的后果\n\n\n
+    </string>
 
     <string name="previewMenuScreenResolution">预览分辨率</string>
     <string name="previewMenuImageScale">图片缩放模式</string>
@@ -40,4 +55,13 @@
     <string name="previewDownloadDialogTitle">下载图片</string>
     <string name="previewDownloadDialogPosButtonText">下载</string>
     <string name="previewDownloadDialogNegButtonText">取消</string>
+    <string name="previewToastDownload">正在下载…</string>
+
+    <string name="helpTitle">帮助</string>
+
+    <string name="infoTitle">关于</string>
+
+    <string name="downloadServiceNotificationChannelName">下载通知</string>
+    <string name="downloadServiceNotificationDownloading">下载中</string>
+    <string name="downloadServiceNotificationDownloadFinish">下载完成，点击查看</string>
 </resources>

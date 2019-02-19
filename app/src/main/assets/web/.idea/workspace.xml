@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23f10d13-5d32-4f02-93df-4a2fee74e927" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../.idea/libraries/Gradle__com_github_bumptech_glide_okhttp3_integration_4_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../.idea/libraries/Gradle__com_liulishuo_okdownload_okdownload_1_0_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../.idea/libraries/Gradle__com_liulishuo_okdownload_okhttp_1_0_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/css/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/css/info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/image/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/js/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/GalleryActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/HelpActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/SettingActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/config/ConfigManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/download/DownloadService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/utils/CacheUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/utils/ImageLoadUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/view/holder/MainDrawerDiverHolder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/view/holder/MainDrawerHeaderHolder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/view/holder/MainDrawerSelectionHolder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/bg_main_drawer_head_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/bg_main_drawer_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_email.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_exit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_feedback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_help.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_image.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_open_in_browser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_website.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/image_main_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/image_main_fail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/layout/activity_gallery.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/layout/activity_help.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/layout/activity_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/layout/item_main_drawer_diver.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/layout/item_main_drawer_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/layout/item_main_drawer_selection.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/dictionaries/creepersan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/dictionaries/creepersan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/BaseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/BootActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/BootActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/InfoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/InfoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/PreviewActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/activity/PreviewActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/application/BingImageApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/application/BingImageApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/file/FileManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/file/FileManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/model/PreviewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/model/PreviewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/utils/FormatUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/utils/FormatUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/utils/ViewUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/utils/ViewUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/view/holder/BingImageHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/creepersan/bingimage/view/holder/BingImageHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable/ic_preview_back_white.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_back_white.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_preview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_preview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/menu/preview_scale.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/menu/preview_scale.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../flash/bing-image-android.fla" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../flash/bing-image-android.fla" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="234767699">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="7" />
+          <entry key="html" value="8" />
+          <entry key="jpg" value="1" />
+          <entry key="js" value="2" />
+          <entry key="png" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="8" />
+          <entry key="Image" value="6" />
+          <entry key="JavaScript" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="1392" />
+          <entry key="html" value="2178" />
+          <entry key="js" value="145" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="1392" />
+          <entry key="HTML" value="2178" />
+          <entry key="JavaScript" value="145" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../web/js/info.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="22" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../web/info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="54" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="54" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hintText</find>
+      <find>#ddd</find>
+      <find>backgro</find>
+      <find>backgr</find>
+      <find>margin-bottom</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>#ccc</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/base.css" />
+        <option value="$PROJECT_DIR$/../web/css/base.css" />
+        <option value="$PROJECT_DIR$/../web/index.html" />
+        <option value="$PROJECT_DIR$/../web/css/info.css" />
+        <option value="$PROJECT_DIR$/../web/help.html" />
+        <option value="$PROJECT_DIR$/../web/info.html" />
+        <option value="$PROJECT_DIR$/../web/js/info.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="981" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="help" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="help" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="help" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="help" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../web/image" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../web/css" />
+      <recent name="$PROJECT_DIR$/../web/image" />
+      <recent name="$PROJECT_DIR$/image" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23f10d13-5d32-4f02-93df-4a2fee74e927" name="Default Changelist" comment="" />
+      <created>1550574506604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550574506604</updated>
+      <workItem from="1550574508490" duration="12630000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12630000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="981" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960506" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../web/image/03.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/image/01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/image/02.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/css/help.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/image/11.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/image/10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/css/info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../web/js/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

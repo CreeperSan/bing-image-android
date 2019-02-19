@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_main_drawer_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <ImageView
+            android:padding="8dp"
+            android:background="@drawable/bg_main_drawer_head_icon"
+            android:id="@+id/itemMainDrawerHeaderIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_main_title"
+            android:layout_width="72dp"
+            android:layout_height="72dp"/>
+
+    <TextView
+            android:id="@+id/itemMainDrawerHeaderText"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemMainDrawerHeaderIcon"
+            android:textColor="#ffffff"
+            android:text="@string/mainDrawerHeaderHint"
+            android:shadowColor="#666666"
+            android:shadowRadius="6"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

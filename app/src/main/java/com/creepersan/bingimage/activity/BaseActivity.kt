@@ -1,6 +1,8 @@
 package com.creepersan.bingimage.activity
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Parcelable
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -9,6 +11,7 @@ import com.creepersan.bingimage.application.BingImageApplication
 import com.creepersan.bingimage.network.BASE_URL
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.io.Serializable
 
 abstract class BaseActivity : AppCompatActivity(){
 
@@ -24,6 +27,8 @@ abstract class BaseActivity : AppCompatActivity(){
             .build()
     }
     val fileManager by lazy { application.getFileManager() }
+    val config by lazy { application.config }
+
     private val mSnackBar by lazy { Snackbar.make(rootView,"",Snackbar.LENGTH_SHORT) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +52,39 @@ abstract class BaseActivity : AppCompatActivity(){
     }
 
 
+    /* start Activity */
+    fun <T:BaseActivity> toActivity(clazz:Class<T>, isFinish:Boolean = false, vararg pair: Pair<String, Any>){
+        val intent = Intent(this, clazz)
+        pair.forEach {
+            when(it.second){
+                is Boolean      -> intent.putExtra(it.first, it.second as Boolean      )
+                is Byte         -> intent.putExtra(it.first, it.second as Byte         )
+                is Char         -> intent.putExtra(it.first, it.second as Char         )
+                is Short        -> intent.putExtra(it.first, it.second as Short        )
+                is Int          -> intent.putExtra(it.first, it.second as Int          )
+                is Long         -> intent.putExtra(it.first, it.second as Long         )
+                is Float        -> intent.putExtra(it.first, it.second as Float        )
+                is Double       -> intent.putExtra(it.first, it.second as Double       )
+                is String       -> intent.putExtra(it.first, it.second as String       )
+                is CharSequence -> intent.putExtra(it.first, it.second as CharSequence )
+                is Parcelable   -> intent.putExtra(it.first, it.second as Parcelable   )
+                is Serializable -> intent.putExtra(it.first, it.second as Serializable )
+                is BooleanArray -> intent.putExtra(it.first, it.second as BooleanArray )
+                is ByteArray    -> intent.putExtra(it.first, it.second as ByteArray    )
+                is ShortArray   -> intent.putExtra(it.first, it.second as ShortArray   )
+                is CharArray    -> intent.putExtra(it.first, it.second as CharArray    )
+                is IntArray     -> intent.putExtra(it.first, it.second as IntArray     )
+                is LongArray    -> intent.putExtra(it.first, it.second as LongArray    )
+                is FloatArray   -> intent.putExtra(it.first, it.second as FloatArray   )
+                is DoubleArray  -> intent.putExtra(it.first, it.second as DoubleArray  )
+                is Bundle       -> intent.putExtra(it.first, it.second as Bundle       )
+            }
+        }
+        startActivity(intent)
+        if (isFinish){
+            finish()
+        }
+    }
 
 
     protected fun Int.toResString():String{

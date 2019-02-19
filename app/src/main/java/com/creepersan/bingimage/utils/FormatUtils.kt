@@ -1,6 +1,7 @@
 package com.creepersan.bingimage.utils
 
 import com.creepersan.bingimage.R
+import com.creepersan.bingimage.database.bean.BingImage
 import com.creepersan.bingimage.database.bean.BingImage.Resolution
 import java.util.ArrayList
 
@@ -29,6 +30,30 @@ fun Resolution.toResolutionStringID():Int{
         Resolution.P_240_400 -> R.string.previewResolution240x400
         Resolution.P_240_320 -> R.string.previewResolution240x320
         else -> R.string.previewResolutionUnknown
+    }
+}
+
+fun Int.toResolution():Resolution{
+    return when(this){
+        Resolution.L_1920_1200.value -> Resolution.L_1920_1200
+        Resolution.L_1920_1080.value -> Resolution.L_1920_1080
+        Resolution.L_1366_768 .value -> Resolution.L_1366_768
+        Resolution.L_1280_720 .value -> Resolution.L_1280_720
+        Resolution.L_1024_768 .value -> Resolution.L_1024_768
+        Resolution.L_800_600  .value -> Resolution.L_800_600
+        Resolution.L_800_480  .value -> Resolution.L_800_480
+        Resolution.L_640_480  .value -> Resolution.L_640_480
+        Resolution.L_400_240  .value -> Resolution.L_400_240
+        Resolution.L_320_240  .value -> Resolution.L_320_240
+        Resolution.P_1080_1920.value -> Resolution.P_1080_1920
+        Resolution.P_768_1366 .value -> Resolution.P_768_1366
+        Resolution.P_768_1280 .value -> Resolution.P_768_1280
+        Resolution.P_720_1280 .value -> Resolution.P_720_1280
+        Resolution.P_480_800  .value -> Resolution.P_480_800
+        Resolution.P_480_640  .value -> Resolution.P_480_640
+        Resolution.P_240_400  .value -> Resolution.P_240_400
+        Resolution.P_240_320  .value -> Resolution.P_240_320
+        else -> Resolution.UNDEFINE
     }
 }
 

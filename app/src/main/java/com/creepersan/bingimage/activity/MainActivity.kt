@@ -3,12 +3,10 @@ package com.creepersan.bingimage.activity
 import android.arch.lifecycle.*
 import android.arch.persistence.room.Room
 import android.content.Intent
-
-import java.util.ArrayList
+import android.net.Uri
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
-import android.support.v4.app.ActivityOptionsCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.Gravity
@@ -21,12 +19,21 @@ import com.creepersan.bingimage.database.bean.BingImage
 import com.creepersan.bingimage.model.MainModel
 import com.creepersan.bingimage.utils.isReachBottom
 import com.creepersan.bingimage.view.holder.BingImageHolder
+import com.creepersan.bingimage.view.holder.MainDrawerDiverHolder
+import com.creepersan.bingimage.view.holder.MainDrawerHeaderHolder
+import com.creepersan.bingimage.view.holder.MainDrawerSelectionHolder
 import kotlinx.android.synthetic.main.activity_main.*
-
-
+import java.util.*
 
 
 class MainActivity : BaseActivity() {
+
+    companion object {
+        const val DRAWER_TYPE_HEADER = 0
+        const val DRAWER_TYPE_SELECTION = 1
+        const val DRAWER_TYPE_DIVER = 2
+        const val DRAWER_TYPE_UNDEFINE = -1
+    }
 
     override val layoutID: Int = R.layout.activity_main
 
@@ -34,6 +41,7 @@ class MainActivity : BaseActivity() {
     private val mRoom by lazy { Room.databaseBuilder(applicationContext, BingImageDatabase::class.java, DB_BINGIMAGE).allowMainThreadQueries().build() }
     private val mLayoutManager = LinearLayoutManager(this)
     private val mAdapter = ImageAdapter()
+    private val mDrawerList = ArrayList<BaseDrawerItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +49,7 @@ class MainActivity : BaseActivity() {
         initRecyclerView()
         initDrawerButton()
         initSwipeRefreshView()
+        initDrawer()
         initRecyclerViewScrollListener()
 
         initLoadDataFromNetwork()
@@ -65,6 +74,55 @@ class MainActivity : BaseActivity() {
             loadNewest()
         }
     }
+    private fun initDrawer(){
+        mDrawerList.clear()
+        mDrawerList.add(HeaderDrawerItem())
+        // 图库
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_image, R.string.mainDrawerSelectionGallery.toResString(),{
+            toActivity(GalleryActivity::class.java)
+            closeDrawer()
+        }))
+        // 设置
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_settings, R.string.mainDrawerSelectionSetting.toResString(),{
+            toActivity(SettingActivity::class.java)
+            closeDrawer()
+        }))
+        mDrawerList.add(DiverDrawerItem())
+        // 关于
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_info, R.string.mainDrawerSelectionInfo.toResString(),{
+            toActivity(InfoActivity::class.java)
+            closeDrawer()
+        }))
+        // 帮助
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_help, R.string.mainDrawerSelectionHelp.toResString(),{
+            toActivity(HelpActivity::class.java)
+            closeDrawer()
+        }))
+        // 反馈
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_feedback, R.string.mainDrawerSelectionFeedback.toResString(),{
+            val intent = Intent(Intent.ACTION_SENDTO)
+            intent.data = Uri.parse("mailto:admin@creepersan.com")
+            intent.putExtra(Intent.EXTRA_SUBJECT, R.string.mainFeedbackMailTitle.toResString())
+            intent.putExtra(Intent.EXTRA_TEXT, R.string.mainFeedbackMailContentTemple.toResString())
+            startActivity(intent)
+            closeDrawer()
+        }, R.drawable.ic_email))
+        mDrawerList.add(DiverDrawerItem())
+        // 网页版
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_website, R.string.mainDrawerSelectionWebsite.toResString(),{
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://bing.creepersan.com")))
+            closeDrawer()
+        }, R.drawable.ic_open_in_browser))
+        mDrawerList.add(DiverDrawerItem())
+        // 退出
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_exit, R.string.mainDrawerSelectionExit.toResString(),{
+            closeDrawer()
+            System.exit(0)
+        }))
+        // 设置
+        mainDrawerRecyclerView.layoutManager = LinearLayoutManager(this)
+        mainDrawerRecyclerView.adapter = DrawerAdapter()
+    }
     private fun initRecyclerViewScrollListener(){
         mainRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener(){
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
@@ -74,7 +132,6 @@ class MainActivity : BaseActivity() {
                 }
             }
         })
-
     }
     // 决定是否要从互联网加载数据
     private fun initLoadDataFromNetwork(){
@@ -156,6 +213,9 @@ class MainActivity : BaseActivity() {
     private fun snackLoadAllFinish(){
         snack(R.string.mainSnackLoadAllFinish.toResString())
     }
+    private fun closeDrawer(){
+        mainDrawerLayout.closeDrawer(Gravity.START)
+    }
 
     /* Observer */
 
@@ -179,10 +239,56 @@ class MainActivity : BaseActivity() {
                 holder.setOnClickListener(View.OnClickListener {
                     val intent = Intent(this@MainActivity, PreviewActivity::class.java)
                     intent.putExtra(PreviewActivity.INTENT_BING_IMAGE, this)
-                    val pairImage = android.support.v4.util.Pair<View, String>(holder.image, "image")
-                    val pairText  = android.support.v4.util.Pair<View, String>(holder.title, "title")
-                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity, pairImage, pairText).toBundle())
+                    startActivity(intent)
+//                    val pairImage = android.support.v4.util.Pair<View, String>(holder.image, "image")
+//                    val pairText  = android.support.v4.util.Pair<View, String>(holder.title, "title")
+//                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity, pairText).toBundle())
+//                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity, pairImage, pairText).toBundle())
                 })
+            }
+        }
+
+    }
+
+    private abstract class BaseDrawerItem
+    private class HeaderDrawerItem : BaseDrawerItem()
+    private class DiverDrawerItem : BaseDrawerItem()
+    private class SelectionDrawerItem(var icon:Int, var title:String, var clickAction:()->Unit, var hint:Int=0) : BaseDrawerItem()
+    private inner class DrawerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+        override fun getItemViewType(position: Int): Int {
+            return when(mDrawerList[position]){
+                is HeaderDrawerItem -> DRAWER_TYPE_HEADER
+                is SelectionDrawerItem -> DRAWER_TYPE_SELECTION
+                is DiverDrawerItem -> DRAWER_TYPE_DIVER
+                else -> DRAWER_TYPE_UNDEFINE
+            }
+        }
+
+        override fun onCreateViewHolder(p0: ViewGroup, p1: Int): RecyclerView.ViewHolder {
+            return when(p1){
+                DRAWER_TYPE_HEADER -> { MainDrawerHeaderHolder(this@MainActivity, p0) }
+                DRAWER_TYPE_SELECTION -> { MainDrawerSelectionHolder(this@MainActivity, p0) }
+                DRAWER_TYPE_DIVER -> { MainDrawerDiverHolder(this@MainActivity, p0) }
+                else -> { throw UnknownError("Main - Drawer : DrawerHolder 类型错误") }
+            }
+        }
+
+        override fun getItemCount(): Int {
+            return mDrawerList.size
+        }
+
+        override fun onBindViewHolder(holder: RecyclerView.ViewHolder, pos: Int) {
+            when(holder){
+                is MainDrawerSelectionHolder -> {
+                    val item = mDrawerList[pos] as SelectionDrawerItem
+                    holder.setIcon(item.icon)
+                    holder.setTitle(item.title)
+                    holder.setHint(item.hint)
+                    holder.setOnClickListener(item.clickAction)
+                }
+                is MainDrawerHeaderHolder -> {
+
+                }
             }
         }
 

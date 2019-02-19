@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.creepersan.bingimage.R
+import com.creepersan.bingimage.utils.setImageGlide
 
 class BingImageHolder(context:Context, parent:ViewGroup) : RecyclerView.ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_main_image,parent,false)){
     val image = itemView.findViewById<ImageView>(R.id.itemMainImageImage)
@@ -16,7 +17,7 @@ class BingImageHolder(context:Context, parent:ViewGroup) : RecyclerView.ViewHold
     val time = itemView.findViewById<TextView>(R.id.itemMainImageTime)
 
     fun setImageByUrl(url:String){
-        Glide.with(image).load(url).into(image)
+        image.setImageGlide(url, R.drawable.image_main_default, R.drawable.image_main_fail)
     }
 
     fun setOnClickListener(listener: View.OnClickListener){

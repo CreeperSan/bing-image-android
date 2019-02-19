@@ -18,15 +18,13 @@ class BootActivity : BaseActivity() {
             toast("初始化文件结构失败")
             finish()
         }
-
-        //
     }
 
     private fun checkPermission(){
         // 请求权限
         if (PackageManager.PERMISSION_GRANTED == packageManager.checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, packageName)){
             finish()
-            startActivity(Intent(this, MainActivity::class.java))
+            toActivity(MainActivity::class.java)
         } else{
             requestPermissions(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), 1)
         }

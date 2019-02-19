@@ -28,26 +28,26 @@
         <ImageView
                 app:layout_constraintBottom_toBottomOf="@id/mainLeftIcon"
                 app:layout_constraintTop_toTopOf="@id/mainLeftIcon"
-                app:layout_constraintEnd_toStartOf="@id/mainRightIcon"
-                app:layout_constraintStart_toEndOf="@id/mainLeftIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_main_title"
-                android:layout_width="0dp"
+                android:layout_width="48dp"
                 android:padding="6dp"
                 android:layout_height="?attr/actionBarSize"/>
 
-        <ImageView
-                android:visibility="gone"
-                android:clickable="true"
-                android:focusable="true"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:id="@+id/mainRightIcon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:src="@drawable/ic_main_search"
-                android:padding="12dp"
-                android:layout_width="48dp"
-                android:layout_height="?attr/actionBarSize"/>
+        <!--<ImageView-->
+                <!--android:visibility="gone"-->
+                <!--android:clickable="true"-->
+                <!--android:focusable="true"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:id="@+id/mainRightIcon"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--android:src="@drawable/ic_main_search"-->
+                <!--android:padding="12dp"-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="?attr/actionBarSize"/>-->
 
 
         <android.support.v4.widget.SwipeRefreshLayout
@@ -69,7 +69,7 @@
             android:background="#FFFFFF"
             android:layout_gravity="start"
             android:id="@+id/mainDrawerRecyclerView"
-            android:layout_width="300dp"
+            android:layout_width="320dp"
             android:layout_height="match_parent"/>
 
 </android.support.v4.widget.DrawerLayout>

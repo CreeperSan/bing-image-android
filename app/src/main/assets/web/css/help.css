@@ -1,0 +1,63 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    width: 100%;
+    padding: 16px 0;
+}
+
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 32px;
+}
+
+img{
+    align-self: center;
+    max-width: 80%;
+    margin: 8px 0;
+    border-radius: 16px;
+    box-shadow: gray 0 0 8px;
+}
+
+.imgEmoji{
+    box-shadow: gray 0 0 0;
+    height: 1.5em;
+    margin: 0;
+}
+
+.helpTitle{
+    margin: 16px 10px;
+}
+
+.helpDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 5%;
+    width: 90%;
+    margin: 4px 0;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.3) 0 0 26px;
+}
+
+.helpQ{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.helpA{
+    line-height: 1.5em;
+}
+
+.hintText{
+    color: gray;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+
