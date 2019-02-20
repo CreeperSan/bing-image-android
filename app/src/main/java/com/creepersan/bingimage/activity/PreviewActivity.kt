@@ -3,6 +3,7 @@ package com.creepersan.bingimage.activity
 import android.app.AlertDialog
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
+import android.graphics.drawable.Drawable
 import android.os.AsyncTask
 import android.os.Bundle
 import android.os.Environment
@@ -15,14 +16,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.ImageView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import com.bumptech.glide.request.target.CustomViewTarget
+import com.bumptech.glide.request.target.ImageViewTarget
+import com.bumptech.glide.request.target.Target
+import com.bumptech.glide.request.target.ViewTarget
+import com.bumptech.glide.request.transition.Transition
 import com.creepersan.bingimage.R
 import com.creepersan.bingimage.database.bean.BingImage
 import com.creepersan.bingimage.model.PreviewModel
 import com.creepersan.bingimage.network.request.BingUrlRequest
 import com.creepersan.bingimage.network.response.BingUrlResponse
-import com.creepersan.bingimage.utils.setImageGlide
-import com.creepersan.bingimage.utils.setTextOrDisappear
-import com.creepersan.bingimage.utils.toResolutionStringID
+import com.creepersan.bingimage.utils.*
 import com.creepersan.bingimage.view.holder.PreviewDownloadResolutionItemHolder
 import kotlinx.android.synthetic.main.activity_preview.*
 import okhttp3.ResponseBody
@@ -39,7 +45,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
     private val mViewModel by lazy { ViewModelProviders.of(this).get(PreviewModel::class.java) }
     private val mBingImageObserver by lazy { BingImageObserver() }
-    private val mImageScaleObserver by lazy { ImageScaleObserver() }
     private val mImagePreviewResolutionObserver by lazy { ImagePreviewObserver() }
     private val mResolutionMenu by lazy {
         val popupMenu = PopupMenu(this, previewToolbar.findViewById(R.id.menuPreviewScreenResolution))
@@ -67,20 +72,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
                 else -> BingImage.Resolution.L_1920_1080
             })
             return@setOnMenuItemClickListener true
-        }
-        popupMenu
-    }
-    private val mImageScaleMenu by lazy {
-        val popupMenu = PopupMenu(this, previewToolbar.findViewById(R.id.menuPreviewImageScale))
-        popupMenu.menuInflater.inflate(R.menu.preview_scale ,popupMenu.menu)
-        popupMenu.setOnMenuItemClickListener {
-            mViewModel.imageScale.value = when(it.itemId){
-                R.id.menuPreviewScaleCenterCrop -> ImageView.ScaleType.CENTER_CROP
-                R.id.menuPreviewScaleCenterInside -> ImageView.ScaleType.CENTER_INSIDE
-                R.id.menuPreviewScaleFitCenter -> ImageView.ScaleType.FIT_CENTER
-                else -> ImageView.ScaleType.CENTER_CROP
-            }
-            true
         }
         popupMenu
     }
@@ -144,7 +135,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
     private fun initLiveData(){
         mViewModel.bingImage.observe(this, mBingImageObserver)
-        mViewModel.imageScale.observe(this, mImageScaleObserver)
         mViewModel.observerPreviewResolution(this, mImagePreviewResolutionObserver)
     }
 
@@ -183,9 +173,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
         when(item.itemId){
             R.id.menuPreviewScreenResolution -> {
                 mResolutionMenu.show()
-            }
-            R.id.menuPreviewImageScale -> {
-                mImageScaleMenu.show()
             }
         }
         return true
@@ -237,7 +224,15 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
     /* Action */
     private fun refreshImageResolution(){
-        previewImageView.setImageGlide(mViewModel.getPreviewImageUrl(), R.drawable.image_main_default, R.drawable.image_main_fail, mViewModel.getImageScaleType())
+        Glide
+            .with(this)
+            .load(mViewModel.getPreviewImageUrl())
+            .placeholder(R.drawable.image_main_default)
+            .error(R.drawable.image_main_fail)
+            .transition(DrawableTransitionOptions.withCrossFade())
+            .override(mViewModel.getPreviewResolution().getWidth(), mViewModel.getPreviewResolution().getHeight())
+            .into(previewImageView)
+
     }
 
     /* Observer */
@@ -246,15 +241,11 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
             refreshImageResolution()
         }
     }
-    private inner class ImageScaleObserver : Observer<ImageView.ScaleType>{
-        override fun onChanged(t: ImageView.ScaleType?) {
-            refreshImageResolution()
-        }
-    }
     private inner class BingImageObserver : Observer<BingImage?>{
         override fun onChanged(bingImage: BingImage?) {
             if(bingImage != null){
-                previewImageView.setImageGlide(bingImage.getImageUrl(mViewModel.getPreviewResolution()))
+//                previewImageView.setImageGlide(bingImage.getImageUrl(mViewModel.getPreviewResolution()))
+                refreshImageResolution()
                 previewTitle.setTextOrDisappear(bingImage.title)
                 previewLocation.setTextOrDisappear(bingImage.location)
                 previewAuthor.setTextOrDisappear(bingImage.author)
@@ -266,8 +257,3 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
 //int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200, mContext.getResources().getDisplayMetrics());
 //int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200f, mContext.getResources().getDisplayMetrics());
-//---------------------
-//作者：aptentity
-//来源：CSDN
-//原文：https://blog.csdn.net/aptentity/article/details/64126363
-//版权声明：本文为博主原创文章，转载请附上博文链接！

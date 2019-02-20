@@ -18,6 +18,7 @@
 
         <activity android:name=".activity.BootActivity">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
@@ -30,6 +31,16 @@
         <activity android:name=".activity.SettingActivity"/>
 
         <service android:name=".download.DownloadService"/>
+
+        <provider
+                android:authorities="com.creepersan.bingimage.provider"
+                android:name="android.support.v4.content.FileProvider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/provider"/>
+        </provider>
 
     </application>
 </manifest>

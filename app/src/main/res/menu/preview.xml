@@ -3,12 +3,6 @@
 
     <item
             app:showAsAction="always"
-            android:title="@string/previewMenuImageScale"
-            android:id="@+id/menuPreviewImageScale"
-            android:icon="@drawable/ic_preview_scale"/>
-
-    <item
-            app:showAsAction="always"
             android:title="@string/previewMenuScreenResolution"
             android:id="@+id/menuPreviewScreenResolution"
             android:icon="@drawable/ic_preview_screen_resolution_white"/>

@@ -54,5 +54,7 @@ dependencies {
     // Downloader
     implementation 'com.liulishuo.okdownload:okdownload:1.0.5'
     implementation 'com.liulishuo.okdownload:okhttp:1.0.5'
-
+    // ImageViewer .. not fit
+    implementation 'com.liyi.view:image-viewer:2.1.2'
+    //
 }

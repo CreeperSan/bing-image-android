@@ -12,10 +12,10 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withC
 
 fun TextView.setTextOrDisappear(content:String){
     if (content.isEmpty()){
-        visibility = View.GONE
+        setGone()
     }else{
         text = content
-        visibility = View.VISIBLE
+        setVisible()
     }
 }
 
@@ -45,4 +45,15 @@ fun RecyclerView.isReachTop():Boolean{
 
 fun RecyclerView.isReachBottom():Boolean{
     return !this.canScrollVertically(1)
+}
+
+/* View */
+fun View.setVisible(){
+    if(this.visibility != View.VISIBLE){
+        this.visibility = View.VISIBLE
+    }
+}
+
+fun View.setGone(){
+    this.visibility = View.GONE
 }

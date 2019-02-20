@@ -42,20 +42,33 @@
     <string name="previewResolution240x400">240×400</string>
     <string name="previewResolution240x320">240×320</string>
     <string name="previewResolutionUnknown">未知分辨率</string>
-    <string name="previewScaleCenterCrop">Center Crop</string>
-    <string name="previewScaleCenter">Center</string>
-    <string name="previewScaleCenterInside">Center Inside</string>
-    <string name="previewScaleFitCenter">Fit Center</string>
-    <string name="previewScaleFitEnd">Fit End</string>
-    <string name="previewScaleFitStart">Fit Start</string>
-    <string name="previewScaleFitXY">Fit XY</string>
-    <string name="previewScaleMatrix">Matrix</string>
     <string name="previewDownloadDialogHint">你可以长按下载按钮重新打开此对话框</string>
     <string name="previewDownloadDialogCheckbox">下次不再显示</string>
     <string name="previewDownloadDialogTitle">下载图片</string>
     <string name="previewDownloadDialogPosButtonText">下载</string>
     <string name="previewDownloadDialogNegButtonText">取消</string>
     <string name="previewToastDownload">正在下载…</string>
+
+    <string name="settingTitle">设置</string>
+    <string name="settingBasicCatalog">基本设置</string>
+    <string name="settingBasicDoubleClickTitle">双击退出</string>
+    <string name="settingBasicDoubleClickContent">快速按下2次返回键退出应用</string>
+    <string name="settingViewSettingCatalog">预览设置</string>
+    <string name="settingViewSettingViewResolutionTitle">首页分辨率</string>
+    <string name="settingViewSettingViewPreviewTitle">预览页分辨率</string>
+    <string name="settingViewSettingViewDownloadTitle">下载分辨率</string>
+    <string name="settingOtherCatalog">其他设置</string>
+    <string name="settingOtherClearCacheTitle">清除缓存</string>
+    <string name="settingOtherClearCacheContent">当前缓存大小 : %s</string>
+
+    <string name="galleryMenuShare">分享</string>
+    <string name="galleryMenuDelete">删除</string>
+    <string name="galleryMenuSetAsWallpaper">设为壁纸</string>
+    <string name="galleryShareTo">分享到..</string>
+    <string name="gallerySetWallpaper">设置壁纸</string>
+    <string name="galleryHintFileNotExist">文件不存在</string>
+
+    <string name="galleryTitle">图库</string>
 
     <string name="helpTitle">帮助</string>
 

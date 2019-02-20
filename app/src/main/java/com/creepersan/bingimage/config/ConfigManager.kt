@@ -12,13 +12,21 @@ class ConfigManager(context: Context){
 
     companion object {
         private const val NAME_APP = "BingImage.pref"
-
+        private const val KEY_DOUBLE_CLICK_EXIT = "double_click_exit"
 
         private const val NAME_PREVIEW = "Preview.pref"
         private const val KEY_PREVIEW_RESOLUTION = "preview_resolution"
         private const val KEY_DOWNLOAD_RESOLUTION = "download_resolution"
         private const val KEY_LIST_RESOLUTION = "list_resolution"
         private const val KEY_DOWNLOAD_DIALOG_DEFAULT_NOT_DISPLAY = "download_dialog_default_not_display"
+    }
+
+    /* Basic */
+    fun isDoubleClickExit():Boolean{
+        return mAppConfig.getBoolean(KEY_DOUBLE_CLICK_EXIT, true)
+    }
+    fun setDoubleClickExit(state:Boolean){
+        mAppConfig.edit().putBoolean(KEY_DOUBLE_CLICK_EXIT, state).apply()
     }
 
     /* Preview */
