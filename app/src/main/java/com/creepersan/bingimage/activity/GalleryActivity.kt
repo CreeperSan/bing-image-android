@@ -10,6 +10,7 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.support.v4.content.FileProvider
+import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.DisplayMetrics
@@ -108,7 +109,7 @@ class GalleryActivity : BaseActivity(), ImageLoader<GalleryActivity.GalleryItem>
         }
     }
     private fun initRecyclerView(){
-        galleryRecyclerView.layoutManager = LinearLayoutManager(this)
+        galleryRecyclerView.layoutManager = GridLayoutManager(this, 3)
         galleryRecyclerView.adapter = mAdapter
     }
     private fun initImageViewer(){
@@ -136,20 +137,23 @@ class GalleryActivity : BaseActivity(), ImageLoader<GalleryActivity.GalleryItem>
                 if (!fileName.endsWith(".jpg")){
                     return@forEach
                 }
-                // 去除冗余以及重复的
-                if (fileName.contains("@")){
-                    return@forEach
-                }
                 // 解析数据
-                fileName = fileName.substring(0, fileName.indexOf("."))
+                if (fileName.contains("@")){
+                    fileName = fileName.substring(0, fileName.indexOf("@"))
+                }
+                if (fileName.contains(".")){
+                    fileName = fileName.substring(0, fileName.indexOf("."))
+                }
                 val item = GalleryItem(file)
-                fileName.split("-").forEach {
-                    if (it.isInt() && it.length==8 && it.toInt()>20180101 && it.toInt()<21000000){ // 日期
-                        item.time = it
-                    }else if (it.contains("x") && it.split("x").size==2 && it.substring(0,it.indexOf("x")).isInt() && it.substring(it.indexOf("x")+1, it.length).isInt()){
-                        item.resolution = it
-                    }else if (!it.isInt()){
-                        item.title = it
+                val splits = fileName.split("-")
+                if (splits.isNotEmpty()){
+                    item.title = splits[0]
+                    splits.forEach {
+                        if (it.isInt() && it.length==8 && it.toInt()>20180101 && it.toInt()<21000000){ // 日期
+                            item.time = it
+                        }else if (it.contains("x") && it.split("x").size==2 && it.substring(0,it.indexOf("x")).isInt() && it.substring(it.indexOf("x")+1, it.length).isInt()){
+                            item.resolution = it
+                        }
                     }
                 }
                 itemList.add(item)
@@ -251,6 +255,7 @@ class GalleryActivity : BaseActivity(), ImageLoader<GalleryActivity.GalleryItem>
                 galleryImageViewer.setStartPosition(pos)
                 showGallery()
             })
+            holder.setText(item.time)
         }
 
     }

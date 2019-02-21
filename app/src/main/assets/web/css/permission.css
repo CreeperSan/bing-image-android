@@ -1,0 +1,46 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.permission-div{
+    width: 90%;
+    padding: 16px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.permission-icon{
+    width: 3em;
+    height: 3em;
+}
+
+.permission-content-div{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.permission-content-title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.permission-content-content{
+    font-size: 1.0em;
+    margin-top: 0.3em;
+}
+
+
+
+

@@ -9,9 +9,9 @@
             android:background="@color/colorPrimary"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/galleryToolbar"
-            app:titleTextColor="#FFFFFF"
+            app:titleTextColor="@color/colorAccent"
             app:title="@string/galleryTitle"
-            app:navigationIcon="@drawable/ic_back_white"
+            app:navigationIcon="@drawable/ic_back_accent"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"/>
 
@@ -37,7 +37,7 @@
     <android.support.v7.widget.Toolbar
             android:id="@+id/galleryWatchToolbar"
             android:visibility="gone"
-            app:titleTextColor="#FFFFFF"
+            app:titleTextColor="@color/white"
             tools:visibility="visible"
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/ic_back_white"

@@ -11,27 +11,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a672d2-a09d-47ca-9aae-a1a97be7dad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_chrisbanes_PhotoView_2_1_4_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_liyi_view_image_viewer_2_1_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/GalleryModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/PinchImageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/GalleryImageHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingCatalogHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingCheckBoxHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingDiverHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingSimpleHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_clean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_exit_to_app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_wallpaper_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_gallery_image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_setting_catalog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_setting_checkbox.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_setting_diver.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_setting_simple.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/gallery_watching.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/provider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/css/permission.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/help_ja.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/help_zh_cn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/help_zh_tw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/image/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/image/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/image/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/info_ja.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/info_zh_cn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/info_zh_tw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/permission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/permission_ja.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/permission_zh_cn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/web/permission_zh_tw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PermissionDescriptionActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/SystemUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_boot_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_attach_file.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back_accent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cached.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_download_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_lock.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_permission_description.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_setting_long_task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_setting_progressbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_setting_single_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_setting_dialog_single_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-ja-rJP/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-zh/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -43,28 +59,56 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/creepersan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/creepersan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/help.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BootActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BootActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/HelpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/HelpActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/ViewUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/ViewUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/1.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_preview_screen_resolution.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_screen_resolution.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/data/BingImageViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/network/constance.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/network/constance.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/CacheUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/CacheUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/GalleryImageHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/GalleryImageHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back_white.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back_white.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_main_drawer_accent.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_boot.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_preview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_preview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/preview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/preview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/preview_scale.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_preview_download.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_preview_download.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_gallery_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_gallery_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_diver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_diver.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_selection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_selection.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_main_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_main_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_preview_download_resolution.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_preview_download_resolution.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_setting_diver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_setting_diver.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flash/bing-image-android.fla" beforeDir="false" afterPath="$PROJECT_DIR$/flash/bing-image-android.fla" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,39 +132,45 @@
     <session id="589635208">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="4" />
-          <entry key="project.open.time.4" value="7" />
+          <entry key="project.open.time.4" value="8" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
+          <entry key="Translations Editor" value="5" />
+          <entry key="apk" value="1" />
+          <entry key="class" value="8" />
           <entry key="css" value="1" />
           <entry key="gradle" value="25" />
           <entry key="gradlew" value="1" />
-          <entry key="html" value="5" />
+          <entry key="html" value="6" />
           <entry key="iml" value="1" />
-          <entry key="java" value="92" />
-          <entry key="kt" value="263" />
-          <entry key="xml" value="152" />
+          <entry key="java" value="96" />
+          <entry key="kt" value="310" />
+          <entry key="png" value="7" />
+          <entry key="xml" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
+          <entry key="" value="5" />
+          <entry key="APK" value="1" />
+          <entry key="CLASS" value="8" />
           <entry key="CSS" value="1" />
           <entry key="Groovy" value="25" />
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="92" />
-          <entry key="Kotlin" value="263" />
+          <entry key="Image" value="7" />
+          <entry key="JAVA" value="96" />
+          <entry key="Kotlin" value="310" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="152" />
+          <entry key="XML" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -129,8 +179,8 @@
           <entry key="gradle" value="248" />
           <entry key="html" value="288" />
           <entry key="java" value="1" />
-          <entry key="kt" value="39047" />
-          <entry key="xml" value="8637" />
+          <entry key="kt" value="46246" />
+          <entry key="xml" value="11440" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -139,115 +189,114 @@
           <entry key="Groovy" value="248" />
           <entry key="HTML" value="288" />
           <entry key="JAVA" value="1" />
-          <entry key="Kotlin" value="39047" />
-          <entry key="XML" value="8637" />
+          <entry key="Kotlin" value="46246" />
+          <entry key="XML" value="11440" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.7162791">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="56" column="153" selection-start-line="56" selection-start-column="153" selection-end-line="56" selection-end-column="153" />
-                  <folding>
-                    <element signature="e#43#216#0" expanded="true" />
-                    <element signature="e#1447#1475#0" expanded="true" />
-                    <element signature="e#1563#1600#0" expanded="true" />
-                    <element signature="e#1615#1654#0" expanded="true" />
-                    <element signature="e#2092#2126#1" expanded="true" />
-                    <element signature="e#2217#2263#0" expanded="true" />
-                    <element signature="e#2515#2558#0" expanded="true" />
-                    <element signature="e#2751#2795#0" expanded="true" />
-                    <element signature="e#2106#2134#0" expanded="true" />
-                    <element signature="e#2216#2252#0" expanded="true" />
-                    <element signature="e#2268#2306#0" expanded="true" />
-                    <element signature="e#392#408#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/database/bean/BingImage.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="584">
-                  <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1683">
-                  <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="58" column="53" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="53" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="123" column="54" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+              <folding>
+                <element signature="e#2002#3989#2" />
+                <element signature="e#2234#3965#2" />
+                <element signature="e#4030#6077#2" />
+                <element signature="e#4478#5259#1" />
+                <element signature="e#5303#5398#2" />
+                <element signature="e#5574#5667#2" />
+                <element signature="e#5758#5819#2" />
+                <element signature="e#5867#6047#0" />
+                <element signature="e#5897#6037#0" />
+                <element signature="e#6194#6343#0" />
+                <element signature="e#6375#6529#0" />
+                <element signature="e#6557#6722#0" />
+                <element signature="e#6604#6716#1" />
+                <element signature="e#6753#6939#0" />
+                <element signature="e#6983#7385#0" />
+                <element signature="e#7028#7232#2" />
+                <element signature="e#7093#7149#1" />
+                <element signature="e#7153#7221#1" />
+                <element signature="e#7280#7379#2" />
+                <element signature="e#7420#7457#0" />
+                <element signature="e#7517#7684#0" />
+                <element signature="e#7594#7648#0" />
+                <element signature="e#7734#8024#0" />
+                <element signature="e#8207#9354#0" />
+                <element signature="e#8310#8402#0" />
+                <element signature="e#8445#8495#0" />
+                <element signature="e#8590#9347#0" />
+                <element signature="e#8837#9336#2" />
+                <element signature="e#8969#9180#2" />
+                <element signature="e#9053#9162#1" />
+                <element signature="e#9929#10042#0" />
+                <element signature="e#9988#10036#0" />
+                <element signature="e#10107#10580#0" />
+                <element signature="e#10163#10574#0" />
+                <element signature="e#10198#10564#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile_vertical" />
         <option value="Class" />
-        <option value="resourceFile" />
-        <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="valueResourceFile" />
+        <option value="Kotlin File" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ext</find>
-      <find>mainRecyclerView</find>
-      <find>snack</find>
-      <find>snackHide</find>
-      <find>snackhide</find>
-      <find>previewResolution1920x1200</find>
-      <find>mResolutionMenu</find>
-      <find>isDownloadDialogDefaultDisplay</find>
-      <find>mainRightIcon</find>
-      <find>isDownloadDialogDefaultNotDisplay</find>
-      <find>config</find>
-      <find>startActivity</find>
-      <find>+id</find>
-      <find>maven</find>
-      <find>mImageDataList</find>
-      <find>mImageLoader</find>
-      <find>getModelLoaders</find>
       <find>galleryAppBarLayout</find>
       <find>viewState</find>
       <find>mViewState</find>
@@ -261,7 +310,27 @@
       <find>itemList</find>
       <find>t</find>
       <find>KEY_LIST_RESOLUTION</find>
+      <find>settingOtherClearCacheContent</find>
+      <find>Resolution()</find>
+      <find>setImage</find>
+      <find>BingImage</find>
+      <find>250</find>
+      <find>info</find>
+      <find>previewMenuImageScale</find>
+      <find>完成</find>
+      <find>colorPrimary</find>
+      <find>mRoom</find>
+      <find>mainDrawerSelectionBing</find>
+      <find>gallery</find>
+      <find>LENGTH_SHORT</find>
+      <find>dddddd</find>
+      <find>previewDownloadDialogTitle</find>
+      <find>setTitle</find>
+      <find>please</find>
     </findStrings>
+    <replaceStrings>
+      <replace>permissionDescription</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2728,56 +2797,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_header.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/MainDrawerDiverHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_diver.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/SettingAc.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BootActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/assets/help/css/base.css" />
-        <option value="$PROJECT_DIR$/app/src/main/assets/help/index.html" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/HelpActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_info.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_preview_image.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/PreviewGalleryImage.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/PreviewGalleryImageHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_gallery_image.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/GalleryImageHolder.kt" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/PinchImageView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_preview.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/gallery_watching.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/provider.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/GalleryModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/ViewUtils.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/preview.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/assets/web/info.html" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/item_setting_title.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_title.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_diver.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_simple_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingDiverHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingTitleHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingCatalogHolder.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingCheckBixHolder.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingCheckBoxHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingSimpleHolder.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_simple.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_checkbox.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_setting_progressbar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_setting_single_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_setting_long_task.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BootActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-zh/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_main_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_permission_description.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_back_white.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/GalleryImageHolder.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_gallery_image.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_main_image.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_preview.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_dialog_single_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_preview_download_resolution.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_selection.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/network/constance.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/SystemUtils.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/HelpActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PermissionDescriptionActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_setting_diver.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_preview_download.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_diver.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/CacheUtils.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-ja-rJP/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/shape_boot_button.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/shape_boot_button_pressed.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_botton_boot.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_boot.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt" />
       </list>
     </option>
@@ -2806,68 +2875,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="holder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="holder" type="462c0819:PsiDirectoryNode" />
-              <item name="setting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
@@ -2884,7 +2899,14 @@
               <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="strings" type="c431d0b8:AndroidResGroupNode" />
             </path>
             <path>
               <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
@@ -2894,12 +2916,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="format&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt&#10;chec&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/item_setting_checkbox.xml&#10;item&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/item_setting_checkbox.xml&#10;Config&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt&#10;str&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/strings.xml&#10;SettingAc&#9;null&#9;null&#10;gallerAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;info&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/assets/web/info.html&#10;PreviewMode&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt&#10;PreViewAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;infoac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt&#10;Mainac&#9;null&#9;null&#10;ga&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;PreviewAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;Format&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt&#10;Resolution&#9;null&#9;null&#10;Previewac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;GaMod&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/GalleryModel.kt&#10;PM&#9;null&#9;null&#10;Str&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/strings.xml&#10;GallerAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;ViewU&#9;PSI&#9;JAVA://android.support.design.internal.ViewUtils&#10;FormatUt&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt&#10;Ga&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;PREVIEW&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;itemga&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/item_gallery_image.xml&#10;previewac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;PrAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;GalleryM&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/GalleryModel.kt&#10;galler&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;STRIN&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/strings.xml&#10;inf&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt&#10;Info&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/activity_info.xml&#10;activityinf&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/activity_info.xml&#10;He&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/HelpActivity.kt&#10;string&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/strings.xml&#10;BootAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/BootActivity.kt&#10;manife&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/AndroidManifest.xml&#10;BaseAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt&#10;mainA&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt&#10;manif&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/AndroidManifest.xml&#10;acmain&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/activity_main.xml&#10;header&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/item_main_drawer_header.xml&#10;downloadS&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/download/DownloadService.kt&#10;Pm&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt&#10;mMo&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/MainModel.kt&#10;MainAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt&#10;PreView&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt&#10;preview&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/activity_preview.xml&#10;Preview&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt" />
+    <property name="SearchEverywhereHistoryKey" value="confi&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt&#10;PreviewAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;BootAc&#9;null&#9;null&#10;settingac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt&#10;Cache&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/utils/CacheUtils.kt&#10;Previewac&#9;null&#9;null&#10;color&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/colors.xml&#10;dialogdown&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/dialog_preview_download.xml&#10;Snac&#9;PSI&#9;JAVA://android.support.design.widget.Snackbar&#10;Mainac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt&#10;permission&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PermissionDescriptionActivity.kt&#10;permiss&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/activity_permission_description.xml&#10;helpa&#9;null&#9;null&#10;info&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt&#10;MainAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt&#10;BaseaC&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt&#10;Baseac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt&#10;Settingac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt&#10;preview&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/activity_preview.xml&#10;mani&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/AndroidManifest.xml&#10;mainac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt&#10;MainMo&#9;null&#9;null&#10;GaAc&#9;null&#9;null&#10;activityga&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/activity_gallery.xml&#10;Sty&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/styles.xml&#10;mainA&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt&#10;main&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt&#10;bootac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/BootActivity.kt&#10;SettingAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt&#10;str&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/strings.xml&#10;Bootac&#9;null&#9;null&#10;Applica&#9;null&#9;null&#10;String&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/strings.xml&#10;Config&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt&#10;format&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt&#10;chec&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/item_setting_checkbox.xml&#10;item&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/layout/item_setting_checkbox.xml&#10;gallerAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;PreviewMode&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt&#10;PreViewAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt&#10;infoac&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt&#10;ga&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;Format&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt&#10;Resolution&#9;null&#9;null&#10;GaMod&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/model/GalleryModel.kt&#10;PM&#9;null&#9;null&#10;Str&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/res/values/strings.xml&#10;GallerAc&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt&#10;ViewU&#9;PSI&#9;JAVA://android.support.design.internal.ViewUtils&#10;FormatUt&#9;FILE&#9;file:///Users/creepersan/project/bing-image-android/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="FA69K0311789" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -2917,10 +2939,10 @@
       <recent name="com.creepersan.bingimage.activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/web/image" />
       <recent name="$PROJECT_DIR$/app/src/main/res/menu" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3022,16 +3044,17 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32921347" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.2752809" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.2752809" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" weight="0.32921347" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.32921347" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.32921347" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5005325" side_tool="true" weight="0.32921347" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="6" sideWeight="0.5005325" side_tool="true" visible="true" weight="0.32921347" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49946752" weight="0.21910113" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32921347" />
+      <window_info anchor="right" id="StringPreview" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -3063,543 +3086,297 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/gallery_watching.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-zh/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#232#258#0" expanded="true" />
-            <element signature="e#442#469#0" expanded="true" />
-            <element signature="e#655#690#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="107">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liyi.view/image-viewer/2.1.2/70c6a889ee4d448d844a1bc3ae1d8b5aab21dbb6/image-viewer-2.1.2-sources.jar!/com/liyi/viewer/ImageViewerState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/provider.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_main_drawer_accent.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/os/StrictMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="1977" selection-start-line="1977" selection-end-line="1977" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/livedata-core/1.1.1/c38818e006ea7a408c05e3090364332d46494ef/livedata-core-1.1.1-sources.jar!/android/arch/lifecycle/MutableLiveData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/livedata-core/1.1.1/c38818e006ea7a408c05e3090364332d46494ef/livedata-core-1.1.1-sources.jar!/android/arch/lifecycle/LiveData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="164" column="16" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/4cc4b6b4bdc63f71e346cf016779ed43/jars/classes.jar!/android/support/v4/view/ViewPager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="675" column="28" selection-start-line="675" selection-start-column="28" selection-end-line="675" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/ViewUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.9.0/5f95e3cc34b116a8024f2af42f66e257d2e28ccb/glide-4.9.0-sources.jar!/com/bumptech/glide/request/target/ViewTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.9.0/5f95e3cc34b116a8024f2af42f66e257d2e28ccb/glide-4.9.0-sources.jar!/com/bumptech/glide/request/target/CustomViewTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.9.0/5f95e3cc34b116a8024f2af42f66e257d2e28ccb/glide-4.9.0-sources.jar!/com/bumptech/glide/RequestBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="682" column="46" selection-start-line="682" selection-start-column="46" selection-end-line="682" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.9.0/5f95e3cc34b116a8024f2af42f66e257d2e28ccb/glide-4.9.0-sources.jar!/com/bumptech/glide/request/target/ImageViewTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.9.0/5f95e3cc34b116a8024f2af42f66e257d2e28ccb/glide-4.9.0-sources.jar!/com/bumptech/glide/request/BaseRequestOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="474" column="11" selection-start-line="474" selection-start-column="11" selection-end-line="474" selection-end-column="11" />
-          <folding>
-            <element signature="e#16293#16294#0" expanded="true" />
-            <element signature="e#16330#16331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/extensions/1.1.1/d654e6aa2f4a7c33f2dfe6c8465ee9ad2a81c1aa/extensions-1.1.1-sources.jar!/android/arch/lifecycle/ViewModelProviders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="230" column="26" selection-start-line="230" selection-start-column="26" selection-end-line="230" selection-end-column="26" />
-          <folding>
-            <element signature="e#1125#1301#0" />
-            <element signature="e#1822#2056#0" />
-            <element signature="e#2092#2199#0" />
-            <element signature="e#2234#2348#0" />
-            <element signature="e#2276#2342#2" />
-            <element signature="e#2387#2609#0" />
-            <element signature="e#2436#2519#1" />
-            <element signature="e#2567#2603#2" />
-            <element signature="e#2638#4899#0" />
-            <element signature="e#2841#2930#2" />
-            <element signature="e#3065#3154#2" />
-            <element signature="e#3325#3411#2" />
-            <element signature="e#3539#3625#2" />
-            <element signature="e#3761#4150#2" />
-            <element signature="e#4349#4481#2" />
-            <element signature="e#4683#4747#2" />
-            <element signature="e#4948#5408#0" />
-            <element signature="e#5035#5401#0" />
-            <element signature="e#5126#5391#0" />
-            <element signature="e#5327#5377#1" />
-            <element signature="e#5471#5609#0" />
-            <element signature="e#5520#5603#1" />
-            <element signature="e#5655#6693#0" />
-            <element signature="e#5747#6527#2" />
-            <element signature="e#5916#6463#1" />
-            <element signature="e#6109#6222#2" />
-            <element signature="e#6325#6401#2" />
-            <element signature="e#6467#6517#1" />
-            <element signature="e#6529#6686#2" />
-            <element signature="e#6720#8190#0" />
-            <element signature="e#6879#8013#2" />
-            <element signature="e#7051#7949#1" />
-            <element signature="e#7128#7257#1" />
-            <element signature="e#7261#7935#1" />
-            <element signature="e#7545#7670#2" />
-            <element signature="e#7781#7865#2" />
-            <element signature="e#7953#8003#1" />
-            <element signature="e#8015#8183#2" />
-            <element signature="e#8239#8329#0" />
-            <element signature="e#8365#8432#0" />
-            <element signature="e#8467#8533#0" />
-            <element signature="e#8570#8638#0" />
-            <element signature="e#8668#8727#0" />
-            <element signature="e#9259#10240#2" />
-            <element signature="e#9508#10225#2" />
-            <element signature="e#10626#12118#0" />
-            <element signature="e#10685#10981#0" />
-            <element signature="e#11072#11478#0" />
-            <element signature="e#11521#11568#0" />
-            <element signature="e#11651#12111#0" />
-            <element signature="e#11727#12021#0" />
-            <element signature="e#12067#12087#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liyi.view/image-viewer/2.1.2/70c6a889ee4d448d844a1bc3ae1d8b5aab21dbb6/image-viewer-2.1.2-sources.jar!/com/liyi/viewer/widget/ImageViewerAttacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="344" column="18" selection-start-line="344" selection-start-column="18" selection-end-line="344" selection-end-column="18" />
-          <folding>
-            <element signature="e#12706#12707#0" expanded="true" />
-            <element signature="e#12743#12744#0" expanded="true" />
-            <element signature="e#13488#13489#0" expanded="true" />
-            <element signature="e#13525#13526#0" expanded="true" />
-            <element signature="e#14645#14646#0" expanded="true" />
-            <element signature="e#14678#14679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liyi.view/image-viewer/2.1.2/70c6a889ee4d448d844a1bc3ae1d8b5aab21dbb6/image-viewer-2.1.2-sources.jar!/com/liyi/viewer/widget/ImageViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3247">
-          <caret line="226" column="8" selection-start-line="226" selection-start-column="8" selection-end-line="226" selection-end-column="8" />
-          <folding>
-            <element signature="e#3483#3484#0" expanded="true" />
-            <element signature="e#3516#3517#0" expanded="true" />
-            <element signature="e#3631#3632#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="e#3711#3712#0" expanded="true" />
-            <element signature="e#3758#3759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/GalleryModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="594" column="27" selection-start-line="594" selection-start-column="27" selection-end-line="594" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liyi.view/image-viewer/2.1.2/70c6a889ee4d448d844a1bc3ae1d8b5aab21dbb6/image-viewer-2.1.2-sources.jar!/com/liyi/viewer/ViewData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/graphics/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-549">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/view/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="699" column="15" selection-start-line="699" selection-start-column="15" selection-end-line="699" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/preview.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="117" selection-start-line="1" selection-start-column="117" selection-end-line="1" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/preview_scale.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_back_accent.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/PinchImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="docComment;class#PinchImageView#0" />
-            <element signature="e#1307#1448#0" />
-            <element signature="e#1454#1612#0" />
-            <element signature="e#2366#2516#0" />
-            <element signature="e#2568#2780#0" />
-            <element signature="e#2568#3001#0" />
-            <element signature="e#3007#3243#0" />
-            <element signature="e#3007#3935#0" />
-            <element signature="e#3941#4245#0" />
-            <element signature="e#3941#4451#0" />
-            <element signature="e#4457#4691#0" />
-            <element signature="e#4457#5347#0" />
-            <element signature="e#5353#5439#0" />
-            <element signature="e#5353#5592#0" />
-            <element signature="e#5598#5722#0" />
-            <element signature="e#5793#5868#0" />
-            <element signature="e#5793#6353#0" />
-            <element signature="e#6359#6434#0" />
-            <element signature="e#6359#6918#0" />
-            <element signature="e#7001#7846#0" />
-            <element signature="e#7852#8765#0" />
-            <element signature="e#8771#9383#0" />
-            <element signature="e#9466#9925#0" />
-            <element signature="e#9558#9853#0" />
-            <element signature="e#10778#11867#0" />
-            <element signature="e#11320#11348#0" />
-            <element signature="e#11873#12829#0" />
-            <element signature="e#12335#12359#0" />
-            <element signature="e#12835#13867#0" />
-            <element signature="e#13072#13077#0" />
-            <element signature="e#14287#14860#0" />
-            <element signature="e#14940#15030#0" />
-            <element signature="e#15036#15153#0" />
-            <element signature="e#15159#15300#0" />
-            <element signature="e#15306#15416#0" />
-            <element signature="e#15599#16103#0" />
-            <element signature="e#16185#16507#0" />
-            <element signature="e#16736#18429#0" />
-            <element signature="e#16914#16947#0" />
-            <element signature="e#17004#17037#0" />
-            <element signature="e#17092#17127#0" />
-            <element signature="e#17185#17327#0" />
-            <element signature="e#17185#17839#0" />
-            <element signature="e#17849#18423#0" />
-            <element signature="e#19685#19753#0" />
-            <element signature="e#19801#19860#0" />
-            <element signature="class#19966:21112" />
-            <element signature="method#onFling#0;class#19966:21112" />
-            <element signature="method#onLongPress#0;class#19966:21112" />
-            <element signature="method#onDoubleTap#0;class#19966:21112" />
-            <element signature="method#onSingleTapConfirmed#0;class#19966:21112" />
-            <element signature="e#21120#24393#0" />
-            <element signature="e#24399#24549#0" />
-            <element signature="e#24399#26380#0" />
-            <element signature="e#26386#26562#0" />
-            <element signature="e#26386#27234#0" />
-            <element signature="e#26647#26673#0" />
-            <element signature="e#26889#26935#0" />
-            <element signature="e#27240#27478#0" />
-            <element signature="e#27240#28151#0" />
-            <element signature="e#28157#28426#0" />
-            <element signature="e#28157#31047#0" />
-            <element signature="e#31053#31155#0" />
-            <element signature="e#31053#34103#0" />
-            <element signature="e#34109#34265#0" />
-            <element signature="e#34109#34576#0" />
-            <element signature="e#34428#34436#0" />
-            <element signature="e#34582#34609#0" />
-            <element signature="e#34582#34894#0" />
-            <element signature="e#34900#35011#0" />
-            <element signature="e#34900#36057#0" />
-            <element signature="e#35125#35156#0" />
-            <element signature="e#35199#35338#0" />
-            <element signature="e#35199#35589#0" />
-            <element signature="e#35599#36051#0" />
-            <element signature="e#36063#36128#0" />
-            <element signature="e#36063#37706#0" />
-            <element signature="e#36242#36273#0" />
-            <element signature="e#36330#36361#0" />
-            <element signature="e#36416#36449#0" />
-            <element signature="e#36507#36646#0" />
-            <element signature="e#36778#36949#0" />
-            <element signature="e#36778#37229#0" />
-            <element signature="e#37239#37700#0" />
-            <element signature="e#37793#37953#0" />
-            <element signature="e#37793#39575#0" />
-            <element signature="e#38014#38049#0" />
-            <element signature="e#38086#38118#0" />
-            <element signature="e#38161#38237#0" />
-            <element signature="e#38161#38354#0" />
-            <element signature="e#38364#38629#0" />
-            <element signature="e#38364#38890#0" />
-            <element signature="e#38900#39065#0" />
-            <element signature="e#38900#39245#0" />
-            <element signature="e#39255#39323#0" />
-            <element signature="e#39377#39518#0" />
-            <element signature="e#39581#39605#0" />
-            <element signature="e#39581#39985#0" />
-            <element signature="e#39858#39979#0" />
-            <element signature="e#39991#40015#0" />
-            <element signature="e#39991#40391#0" />
-            <element signature="e#40263#40385#0" />
-            <element signature="e#40475#40501#0" />
-            <element signature="e#40475#50919#0" />
-            <element signature="e#40547#40579#0" />
-            <element signature="e#40657#40690#0" />
-            <element signature="e#40793#40831#0" />
-            <element signature="e#40793#41057#0" />
-            <element signature="e#41067#41100#0" />
-            <element signature="e#41215#41247#0" />
-            <element signature="e#41322#41355#0" />
-            <element signature="e#41455#41493#0" />
-            <element signature="e#41455#41716#0" />
-            <element signature="e#41726#41762#0" />
-            <element signature="e#41726#41980#0" />
-            <element signature="e#41990#42023#0" />
-            <element signature="e#42133#42297#0" />
-            <element signature="e#42133#42504#0" />
-            <element signature="e#42514#42688#0" />
-            <element signature="e#42514#42849#0" />
-            <element signature="e#42859#42980#0" />
-            <element signature="e#42859#43301#0" />
-            <element signature="e#43311#43544#0" />
-            <element signature="e#43311#44100#0" />
-            <element signature="e#44110#44338#0" />
-            <element signature="e#44110#44864#0" />
-            <element signature="e#44874#45142#0" />
-            <element signature="e#44874#50913#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/web/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="231" column="7" lean-forward="true" selection-start-line="231" selection-start-column="7" selection-end-line="231" selection-end-column="7" />
-          <folding>
-            <element signature="e#7#252#0" />
-            <element signature="e#254#9816#0" />
-            <element signature="e#560#761#0" />
-            <element signature="e#846#1765#0" />
-            <element signature="e#895#1742#0" />
-            <element signature="e#1063#1715#0" />
-            <element signature="e#1782#2720#0" />
-            <element signature="e#1831#2697#0" />
-            <element signature="e#2007#2670#0" />
-            <element signature="e#2737#8152#0" />
-            <element signature="e#2786#8129#0" />
-            <element signature="e#2950#8102#0" />
-            <element signature="e#8169#9094#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-329">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/item_setting_title.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_selection.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="408">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_setting_catalog.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_info.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingCatalogHolder.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_help.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#54#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_exit.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingCheckBoxHolder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/BingImageHolder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="51" />
-          <folding>
-            <element signature="e#46#393#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_back_white.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_gallery.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_gallery_image.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/GalleryImageHolder.kt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding>
-            <element signature="e#597#619#0" expanded="true" />
+            <element signature="e#46#404#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_setting_simple.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/GalleryActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="157" column="17" selection-start-line="157" selection-start-column="17" selection-end-line="157" selection-end-column="17" />
+          <folding>
+            <element signature="e#1259#1305#0" />
+            <element signature="e#2191#2290#0" />
+            <element signature="e#2245#2284#2" />
+            <element signature="e#2328#4547#0" />
+            <element signature="e#2387#2426#2" />
+            <element signature="e#2547#4541#2" />
+            <element signature="e#2699#2839#1" />
+            <element signature="e#2919#3124#0" />
+            <element signature="e#3006#3088#2" />
+            <element signature="e#3174#3879#0" />
+            <element signature="e#3457#3570#1" />
+            <element signature="e#3574#3704#1" />
+            <element signature="e#3938#4466#0" />
+            <element signature="e#4582#4706#0" />
+            <element signature="e#4740#5246#0" />
+            <element signature="e#5014#5128#2" />
+            <element signature="e#5168#5240#2" />
+            <element signature="e#6606#6677#0" />
+            <element signature="e#6713#6903#0" />
+            <element signature="e#6951#7191#0" />
+            <element signature="e#7221#7542#0" />
+            <element signature="e#7419#7520#2" />
+            <element signature="e#7450#7510#1" />
+            <element signature="e#7584#7705#0" />
+            <element signature="e#7735#8364#0" />
+            <element signature="e#7897#7947#1" />
+            <element signature="e#7951#8358#1" />
+            <element signature="e#8110#8185#2" />
+            <element signature="e#8489#8573#0" />
+            <element signature="e#8673#8777#0" />
+            <element signature="e#8734#8771#0" />
+            <element signature="e#8837#8938#0" />
+            <element signature="e#9022#9791#0" />
+            <element signature="e#9108#9183#0" />
+            <element signature="e#9226#9289#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_main_image.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/MainModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="e#1737#1794#0" />
+            <element signature="e#1827#1876#0" />
+            <element signature="e#1910#1950#0" />
+            <element signature="e#1981#2039#0" />
+            <element signature="e#2065#2097#0" />
+            <element signature="e#2120#2158#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/database/dao/BingImageDao.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/database/bean/BingImage.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="27" column="91" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_selection.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_preview_download_resolution.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_setting_dialog_single_list.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingSimpleHolder.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="204">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <element signature="e#54#349#0" expanded="true" />
+            <element signature="e#43#494#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/network/constance.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/util/Locale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="897" column="25" selection-start-line="897" selection-start-column="25" selection-end-line="897" selection-end-column="25" />
+          <folding>
+            <element signature="e#50834#50835#0" expanded="true" />
+            <element signature="e#50881#50882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_permission_description.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PermissionDescriptionActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/HelpActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="87" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/InfoActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/SystemUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#40#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6b2b26af9ad41a2c39dfe0761ca773e2/jars/classes.jar!/android/support/design/widget/Snackbar.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="44" column="58" lean-forward="true" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -3607,74 +3384,275 @@
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/setting/SettingDiverHolder.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_main_drawer_diver.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="146" selection-start-line="9" selection-start-column="146" selection-end-line="9" selection-end-column="146" />
+        <state relative-caret-position="34">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_preview_download.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
-            <element signature="e#54#260#0" expanded="true" />
+            <element signature="e#805#840#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_setting_checkbox.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-        </state>
-      </provider>
+    <entry file="android-dummy:///Users/creepersan/project/bing-image-android/app/Translations Editor">
+      <provider selected="true" editor-type-id="string-resource-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/CacheUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/database/bean/BingImage.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+        <state relative-caret-position="170">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/SettingActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="56" column="153" selection-start-line="56" selection-start-column="153" selection-end-line="56" selection-end-column="153" />
+        <state relative-caret-position="362">
+          <caret line="230" column="56" selection-start-line="230" selection-start-column="56" selection-end-line="230" selection-end-column="56" />
           <folding>
-            <element signature="e#43#216#0" expanded="true" />
-            <element signature="e#1447#1475#0" expanded="true" />
-            <element signature="e#1563#1600#0" expanded="true" />
-            <element signature="e#1615#1654#0" expanded="true" />
-            <element signature="e#2092#2126#1" expanded="true" />
-            <element signature="e#2217#2263#0" expanded="true" />
-            <element signature="e#2515#2558#0" expanded="true" />
-            <element signature="e#2751#2795#0" expanded="true" />
-            <element signature="e#2106#2134#0" expanded="true" />
-            <element signature="e#2216#2252#0" expanded="true" />
-            <element signature="e#2268#2306#0" expanded="true" />
-            <element signature="e#392#408#0" />
+            <element signature="e#1083#1313#0" />
+            <element signature="e#1356#2281#2" />
+            <element signature="e#1422#2275#2" />
+            <element signature="e#1467#1569#0" />
+            <element signature="e#2326#4619#2" />
+            <element signature="e#2878#2957#2" />
+            <element signature="e#3033#3098#2" />
+            <element signature="e#3248#3620#0" />
+            <element signature="e#3345#3474#0" />
+            <element signature="e#3376#3460#1" />
+            <element signature="e#3649#4613#0" />
+            <element signature="e#3690#3744#0" />
+            <element signature="e#3789#3843#0" />
+            <element signature="e#3880#3930#0" />
+            <element signature="e#3972#4031#0" />
+            <element signature="e#4065#4120#0" />
+            <element signature="e#4157#4209#0" />
+            <element signature="e#4282#4342#0" />
+            <element signature="e#4400#4461#0" />
+            <element signature="e#4487#4535#0" />
+            <element signature="e#4558#4603#0" />
+            <element signature="e#4664#6246#2" />
+            <element signature="e#5120#5188#2" />
+            <element signature="e#5249#5310#2" />
+            <element signature="e#5395#6240#0" />
+            <element signature="e#5450#5548#0" />
+            <element signature="e#5601#5647#0" />
+            <element signature="e#5670#5715#0" />
+            <element signature="e#5738#5783#0" />
+            <element signature="e#5819#5875#0" />
+            <element signature="e#5920#6028#0" />
+            <element signature="e#6067#6121#0" />
+            <element signature="e#6176#6230#0" />
+            <element signature="e#6287#7388#2" />
+            <element signature="e#6698#7382#0" />
+            <element signature="e#6751#6880#0" />
+            <element signature="e#6903#6948#0" />
+            <element signature="e#6971#7016#0" />
+            <element signature="e#7053#7105#0" />
+            <element signature="e#7144#7198#0" />
+            <element signature="e#7229#7285#0" />
+            <element signature="e#7319#7372#0" />
+            <element signature="e#7620#7738#0" />
+            <element signature="e#7769#7868#0" />
+            <element signature="e#7823#7862#2" />
+            <element signature="e#8192#8475#2" />
+            <element signature="e#8932#9072#2" />
+            <element signature="e#9126#9344#2" />
+            <element signature="e#9753#10578#2" />
+            <element signature="e#10016#10485#2" />
+            <element signature="e#10148#10380#1" />
+            <element signature="e#10384#10471#1" />
+            <element signature="e#10780#11614#2" />
+            <element signature="e#11046#11521#2" />
+            <element signature="e#11178#11416#1" />
+            <element signature="e#11420#11507#1" />
+            <element signature="e#11818#12655#2" />
+            <element signature="e#12085#12562#2" />
+            <element signature="e#12217#12457#1" />
+            <element signature="e#12461#12548#1" />
+            <element signature="e#12903#13198#2" />
+            <element signature="e#13530#14544#2" />
+            <element signature="e#13791#14424#2" />
+            <element signature="e#13886#14188#2" />
+            <element signature="e#14425#14523#2" />
+            <element signature="e#14559#14610#2" />
+            <element signature="e#14611#14783#2" />
+            <element signature="e#15019#15120#2" />
+            <element signature="e#15162#15286#0" />
+            <element signature="e#15331#15655#0" />
+            <element signature="e#15435#15620#1" />
+            <element signature="e#15505#15559#2" />
+            <element signature="e#15624#15649#1" />
+            <element signature="e#15676#15942#0" />
+            <element signature="e#15773#15936#1" />
+            <element signature="e#15870#15926#1" />
+            <element signature="e#16070#16296#0" />
+            <element signature="e#16131#16187#0" />
+            <element signature="e#16235#16290#0" />
+            <element signature="e#16398#17488#0" />
+            <element signature="e#16576#16637#0" />
+            <element signature="e#16680#16726#0" />
+            <element signature="e#16811#17481#0" />
+            <element signature="e#16842#16880#1" />
+            <element signature="e#17113#17470#2" />
+            <element signature="e#17179#17377#1" />
+            <element signature="e#17229#17331#1" />
+            <element signature="e#17661#18093#0" />
+            <element signature="e#17746#17793#0" />
+            <element signature="e#17832#17884#0" />
+            <element signature="e#17914#17963#0" />
+            <element signature="e#18026#18087#0" />
+            <element signature="e#18183#20258#0" />
+            <element signature="e#18242#18566#0" />
+            <element signature="e#18657#19077#0" />
+            <element signature="e#19120#19168#0" />
+            <element signature="e#19256#19974#0" />
+            <element signature="e#19370#19416#0" />
+            <element signature="e#19460#19594#0" />
+            <element signature="e#19637#19770#0" />
+            <element signature="e#19815#19950#0" />
+            <element signature="e#20022#20251#0" />
+            <element signature="e#20064#20241#2" />
+            <element signature="e#20136#20227#1" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-ja-rJP/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="69" column="58" lean-forward="true" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="86" column="77" selection-start-line="86" selection-start-column="77" selection-end-line="86" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_boot_button_pressed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_boot_button.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button_boot.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk">
+      <provider selected="true" editor-type-id="apk-viewer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_boot.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BootActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/utils/FormatUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="123" column="54" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+          <folding>
+            <element signature="e#2002#3989#2" />
+            <element signature="e#2234#3965#2" />
+            <element signature="e#4030#6077#2" />
+            <element signature="e#4478#5259#1" />
+            <element signature="e#5303#5398#2" />
+            <element signature="e#5574#5667#2" />
+            <element signature="e#5758#5819#2" />
+            <element signature="e#5867#6047#0" />
+            <element signature="e#5897#6037#0" />
+            <element signature="e#6194#6343#0" />
+            <element signature="e#6375#6529#0" />
+            <element signature="e#6557#6722#0" />
+            <element signature="e#6604#6716#1" />
+            <element signature="e#6753#6939#0" />
+            <element signature="e#6983#7385#0" />
+            <element signature="e#7028#7232#2" />
+            <element signature="e#7093#7149#1" />
+            <element signature="e#7153#7221#1" />
+            <element signature="e#7280#7379#2" />
+            <element signature="e#7420#7457#0" />
+            <element signature="e#7517#7684#0" />
+            <element signature="e#7594#7648#0" />
+            <element signature="e#7734#8024#0" />
+            <element signature="e#8207#9354#0" />
+            <element signature="e#8310#8402#0" />
+            <element signature="e#8445#8495#0" />
+            <element signature="e#8590#9347#0" />
+            <element signature="e#8837#9336#2" />
+            <element signature="e#8969#9180#2" />
+            <element signature="e#9053#9162#1" />
+            <element signature="e#9929#10042#0" />
+            <element signature="e#9988#10036#0" />
+            <element signature="e#10107#10580#0" />
+            <element signature="e#10163#10574#0" />
+            <element signature="e#10198#10564#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/config/ConfigManager.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        <state relative-caret-position="273">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
         </state>
       </provider>
     </entry>

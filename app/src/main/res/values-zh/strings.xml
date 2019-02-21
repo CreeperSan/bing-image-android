@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">必应壁纸</string>
+
+    <string name="mainSnackLoading">(｡•ˇωˇ•｡)正在加载数据</string>
+    <string name="mainSnackNetworkError">⚆_⚆网络连接失败，请检查您的网路连接</string>
+    <string name="mainSnackRequestFail">⚆_⚆与服务器通讯失败，请稍后重试</string>
+    <string name="mainSnackLoadAllFinish">( ͡° ͜ʖ ͡°) 已加载全部数据</string>
+    <string name="mainSnackPressAgainToExit">(╯ᐛ )╯快速按2次返回即可退出</string>
+    <string name="mainDrawerHeaderHint">٩̋(๑˃́ꇴ˂̀๑) 每天新壁纸</string>
+    <string name="mainDrawerSelectionGallery">图库</string>
+    <string name="mainDrawerSelectionInfo">关于</string>
+    <string name="mainDrawerSelectionHelp">帮助</string>
+    <string name="mainDrawerSelectionExit">退出</string>
+    <string name="mainDrawerSelectionWebsite">访问网页版</string>
+    <string name="mainDrawerSelectionSetting">设置</string>
+    <string name="mainDrawerSelectionFeedback">反馈</string>
+    <string name="mainFeedbackMailTitle">Android BingImage 反馈 : 请在这里输入问题名称</string>
+    <string name="mainFeedbackMailContentTemple">
+        问题描述\n\n\n
+        操作步骤\n\n\n
+        问题引起的后果\n\n\n
+    </string>
+
+    <string name="previewMenuScreenResolution">预览分辨率</string>
+    <string name="previewResolutionUnknown">未知分辨率</string>
+    <string name="previewDownloadDialogHint">你可以长按下载按钮重新打开此对话框</string>
+    <string name="previewDownloadDialogCheckbox">下次不再显示</string>
+    <string name="previewDownloadDialogPosButtonText">下载</string>
+    <string name="previewDownloadDialogNegButtonText">取消</string>
+    <string name="previewToastDownload">正在下载…</string>
+
+    <string name="settingTitle">设置</string>
+    <string name="settingBasicCatalog">基本设置</string>
+    <string name="settingBasicDoubleClickTitle">双击退出</string>
+    <string name="settingBasicDoubleClickContent">快速按下2次返回键退出应用</string>
+    <string name="settingViewSettingCatalog">预览设置</string>
+    <string name="settingViewSettingViewResolutionTitle">首页分辨率</string>
+    <string name="settingViewSettingViewPreviewTitle">预览页分辨率</string>
+    <string name="settingViewSettingViewDownloadTitle">下载分辨率</string>
+    <string name="settingViewDownloadHideDownloadDialogTitle">隐藏下载对话框</string>
+    <string name="settingViewDownloadHideDownloadDialogContent">是否隐藏下载对话框，你可以在任何时候长按下载按钮来打开它</string>
+    <string name="settingOtherCatalog">其他</string>
+    <string name="settingOtherClearCacheSizeTitle">设置最大缓存大小</string>
+    <string name="settingOtherClearCacheTitle">清除缓存</string>
+    <string name="settingOtherClearCacheContent">当前缓存大小 : %sM</string>
+    <string name="settingOtherClearCacheHint">正在清除缓存</string>
+    <string name="settingOtherClearCacheContentPrepare">正在计算缓存大小</string>
+    <string name="settingOtherPermissionDescriptionTitle">权限说明</string>
+    <string name="settingOtherPermissionDescriptionContent">查看所需要的权限说明</string>
+    <string name="settingDialogConfirm">确认</string>
+    <string name="settingDialogCancel">取消</string>
+    <string name="settingErrorToast">发生错误</string>
+
+    <string name="galleryMenuShare">分享</string>
+    <string name="galleryMenuDelete">删除</string>
+    <string name="galleryMenuSetAsWallpaper">设为壁纸</string>
+    <string name="galleryShareTo">分享到..</string>
+    <string name="gallerySetWallpaper">设置壁纸</string>
+    <string name="galleryHintFileNotExist">文件不存在</string>
+
+    <string name="galleryTitle">图库</string>
+
+    <string name="helpTitle">帮助</string>
+
+    <string name="infoTitle">关于</string>
+
+    <string name="bootFileErrorText">文件目录初始化失败，请退出并确保根目录下没有存在名为 BingImage 的文件和文件夹然后重试</string>
+    <string name="bootPermissionErrorText">无法取得所需权限，请赋予相关权限后重试</string>
+    <string name="bootPermissionErrorButton">查看权限说明</string>
+
+    <string name="permissionDescriptionTitle">权限说明</string>
+
+    <string name="downloadServiceNotificationChannelName">下载通知</string>
+    <string name="downloadServiceNotificationDownloading">下载中</string>
+    <string name="downloadServiceNotificationDownloadFinish">下载完成，点击查看</string>
+    <string name="settingOtherClearCacheDialogCleanComplete">清除完成</string>
+</resources>

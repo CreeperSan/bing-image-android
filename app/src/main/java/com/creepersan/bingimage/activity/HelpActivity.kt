@@ -3,6 +3,7 @@ package com.creepersan.bingimage.activity
 import android.graphics.Color
 import android.os.Bundle
 import com.creepersan.bingimage.R
+import com.creepersan.bingimage.utils.getWebsiteLocalePostfix
 import kotlinx.android.synthetic.main.activity_help.*
 
 class HelpActivity : BaseActivity() {
@@ -25,7 +26,7 @@ class HelpActivity : BaseActivity() {
         settings.useWideViewPort = true
 
         helpWebView.setBackgroundColor(Color.TRANSPARENT)
-        helpWebView.loadUrl("file:///android_asset/web/help.html")
+        helpWebView.loadUrl("file:///android_asset/web/help${getWebsiteLocalePostfix()}.html")
     }
 
 }

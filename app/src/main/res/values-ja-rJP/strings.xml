@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Bing壁紙</string>
+
+    <string name="mainSnackLoading">(｡•ˇωˇ•｡) ロード中</string>
+    <string name="mainSnackNetworkError">⚆_⚆ ネット接続失敗しました</string>
+    <string name="mainSnackRequestFail">⚆_⚆ サーバー接続失敗しました</string>
+    <string name="mainSnackLoadAllFinish">( ͡° ͜ʖ ͡°) Already load all image data</string>
+    <string name="mainSnackPressAgainToExit">(╯ᐛ )╯もう一度押すと終了します</string>
+    <string name="mainDrawerHeaderHint">٩̋(๑˃́ꇴ˂̀๑) 毎日新しい壁紙あります</string>
+    <string name="mainDrawerSelectionGallery">ギャラリー</string>
+    <string name="mainDrawerSelectionInfo">について</string>
+    <string name="mainDrawerSelectionHelp">ヘルプ</string>
+    <string name="mainDrawerSelectionExit">終了</string>
+    <string name="mainDrawerSelectionWebsite">ウェブバージョン</string>
+    <string name="mainDrawerSelectionSetting">設定</string>
+    <string name="mainDrawerSelectionFeedback">フィードバック</string>
+    <string name="mainFeedbackMailTitle">Android BingImage フィードバック : </string>
+    <string name="mainFeedbackMailContentTemple">
+        問題 : \n\n\n
+        再現のステップ : \n\n\n
+        結果 : \n\n\n
+    </string>
+
+    <string name="previewMenuScreenResolution">Preview resolution</string>
+    <string name="previewResolutionUnknown">Unknown resolution</string>
+    <string name="previewDownloadDialogHint">このボタンを長押しするとこのダイアログを再び開くことができます</string>
+    <string name="previewDownloadDialogCheckbox">隠す</string>
+    <string name="previewDownloadDialogPosButtonText">ダウンロード</string>
+    <string name="previewDownloadDialogNegButtonText">キャンセル</string>
+    <string name="previewToastDownload">ダウンロード中…</string>
+
+    <string name="settingTitle">設定</string>
+    <string name="settingBasicCatalog">基本的な設定</string>
+    <string name="settingBasicDoubleClickTitle">Double tap to exit</string>
+    <string name="settingBasicDoubleClickContent">ダブルタップしてこのアプリを終了</string>
+    <string name="settingViewSettingCatalog">View Setting</string>
+    <string name="settingViewSettingViewResolutionTitle">List image resolution</string>
+    <string name="settingViewSettingViewPreviewTitle">Preview image resolution</string>
+    <string name="settingViewSettingViewDownloadTitle">Download image resolution</string>
+    <string name="settingViewDownloadHideDownloadDialogTitle">ダウンロードダイアログを隠す</string>
+    <string name="settingViewDownloadHideDownloadDialogContent">Hide download dialog, you can also turn it on by long press the download button
+    </string>
+    <string name="settingOtherCatalog">その他</string>
+    <string name="settingOtherClearCacheSizeTitle">キャッシュ最大サイズ </string>
+    <string name="settingOtherClearCacheTitle">クリーンキャッシュ</string>
+    <string name="settingOtherClearCacheContent">キャッシュサイズ : %sM</string>
+    <string name="settingOtherClearCacheHint">クリーニングキャッシュ…</string>
+    <string name="settingOtherClearCacheContentPrepare">キャッシュサイズ計算中…</string>
+    <string name="settingOtherPermissionDescriptionTitle">権限説明</string>
+    <string name="settingOtherPermissionDescriptionContent">権限の説明</string>
+    <string name="settingDialogConfirm">はい</string>
+    <string name="settingDialogCancel">いいえ</string>
+    <string name="settingErrorToast">エラーが発生しました</string>
+
+    <string name="galleryMenuShare">共有</string>
+    <string name="galleryMenuDelete">削除</string>
+    <string name="galleryMenuSetAsWallpaper">Set as wallpaper</string>
+    <string name="galleryShareTo">Share to …</string>
+    <string name="gallerySetWallpaper">Set wallpaper</string>
+    <string name="galleryHintFileNotExist">ファイルが存在しません</string>
+
+    <string name="galleryTitle">ギャラリー</string>
+
+    <string name="helpTitle">ヘルプ</string>
+
+    <string name="infoTitle">について</string>
+
+    <string name="bootFileErrorText">Can not initialize folder, please make sure there are no any file or folder named "BingImage" in your external storage root path and try again.</string>
+    <string name="bootPermissionErrorText">Can not get permission,please give us permission and try again</string>
+    <string name="bootPermissionErrorButton">権限説明</string>
+
+    <string name="permissionDescriptionTitle">権限説明</string>
+
+    <string name="downloadServiceNotificationChannelName">ダウンロード通知</string>
+    <string name="downloadServiceNotificationDownloading">ダウンロード中…</string>
+    <string name="downloadServiceNotificationDownloadFinish">ダウンロード完了しました,タップで確認するた</string>
+    <string name="settingOtherClearCacheDialogCleanComplete">クリア完了</string>
+</resources>

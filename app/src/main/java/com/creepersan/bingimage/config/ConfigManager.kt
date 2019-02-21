@@ -13,6 +13,7 @@ class ConfigManager(context: Context){
     companion object {
         private const val NAME_APP = "BingImage.pref"
         private const val KEY_DOUBLE_CLICK_EXIT = "double_click_exit"
+        private const val KEY_CACHE_SIZE = "cache_size"
 
         private const val NAME_PREVIEW = "Preview.pref"
         private const val KEY_PREVIEW_RESOLUTION = "preview_resolution"
@@ -28,22 +29,28 @@ class ConfigManager(context: Context){
     fun setDoubleClickExit(state:Boolean){
         mAppConfig.edit().putBoolean(KEY_DOUBLE_CLICK_EXIT, state).apply()
     }
+    fun getCacheSize():Int{
+        return mAppConfig.getInt(KEY_CACHE_SIZE, 512)
+    }
+    fun setCacheSize(size:Int){ 
+        mAppConfig.edit().putInt(KEY_CACHE_SIZE, size).apply()
+    }
 
     /* Preview */
     fun getPreviewResolution():Resolution{
-        return mPreviewConfig.getInt(KEY_PREVIEW_RESOLUTION, Resolution.UNDEFINE.value).toResolution()
+        return mPreviewConfig.getInt(KEY_PREVIEW_RESOLUTION, Resolution.L_1920_1080.value).toResolution()
     }
     fun setPreviewResolution(resolution:Resolution){
         mPreviewConfig.edit().putInt(KEY_PREVIEW_RESOLUTION, resolution.value).apply()
     }
     fun getDownloadResolution():Resolution{
-        return mPreviewConfig.getInt(KEY_DOWNLOAD_RESOLUTION, Resolution.UNDEFINE.value).toResolution()
+        return mPreviewConfig.getInt(KEY_DOWNLOAD_RESOLUTION, Resolution.L_1920_1080.value).toResolution()
     }
     fun setDownloadResolution(resolution:Resolution){
         mPreviewConfig.edit().putInt(KEY_DOWNLOAD_RESOLUTION, resolution.value).apply()
     }
     fun getListResolution():Resolution{
-        return mPreviewConfig.getInt(KEY_LIST_RESOLUTION, Resolution.UNDEFINE.value).toResolution()
+        return mPreviewConfig.getInt(KEY_LIST_RESOLUTION, Resolution.L_400_240.value).toResolution()
     }
     fun setListResolution(resolution:Resolution){
         mPreviewConfig.edit().putInt(KEY_LIST_RESOLUTION, resolution.value).apply()

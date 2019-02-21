@@ -25,10 +25,11 @@
         </activity>
         <activity android:name=".activity.InfoActivity"/>
         <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.PreviewActivity"/>
+        <activity android:name=".activity.PreviewActivity" android:theme="@style/BlackTheme"/>
         <activity android:name=".activity.GalleryActivity"/>
         <activity android:name=".activity.HelpActivity"/>
         <activity android:name=".activity.SettingActivity"/>
+        <activity android:name=".activity.PermissionDescriptionActivity"/>
 
         <service android:name=".download.DownloadService"/>
 

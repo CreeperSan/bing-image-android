@@ -13,7 +13,7 @@ class DiskCacheModule : AppGlideModule(){
 
     override fun applyOptions(context: Context, builder: GlideBuilder) {
         super.applyOptions(context, builder)
-        val cacheSize = 1024*1024*250L
+        val cacheSize = 1024L*1024*(BingImageApplication.getInstacne().config.getCacheSize())
         val cacheFolder = BingImageApplication.getInstacne().getFileManager().cacheFolder
         builder.setDiskCache(DiskLruCacheFactory(cacheFolder.path, cacheSize))
     }

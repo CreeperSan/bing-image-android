@@ -7,6 +7,7 @@ import android.net.Uri
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
+import android.support.v4.app.ActivityOptionsCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.Gravity
@@ -33,19 +34,24 @@ class MainActivity : BaseActivity() {
         const val DRAWER_TYPE_SELECTION = 1
         const val DRAWER_TYPE_DIVER = 2
         const val DRAWER_TYPE_UNDEFINE = -1
+
+        const val EXIT_CONFIRM_TIME = 1500
     }
 
     override val layoutID: Int = R.layout.activity_main
 
     private val mViewModel by lazy { ViewModelProviders.of(this).get(MainModel::class.java) }
-    private val mRoom by lazy { Room.databaseBuilder(applicationContext, BingImageDatabase::class.java, DB_BINGIMAGE).allowMainThreadQueries().build() }
+    private val mRoom by lazy { Room.databaseBuilder(applicationContext, BingImageDatabase::class.java, DB_BINGIMAGE).allowMainThreadQueries().build() } // 暂时不需要，后面再考虑功能
     private val mLayoutManager = LinearLayoutManager(this)
     private val mAdapter = ImageAdapter()
     private val mDrawerList = ArrayList<BaseDrawerItem>()
+    private lateinit var mListResolution : BingImage.Resolution
+    private var mIsExitConfirm = true
+    private var mPrevBackTime = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        initResolution()
         initRecyclerView()
         initDrawerButton()
         initSwipeRefreshView()
@@ -55,7 +61,16 @@ class MainActivity : BaseActivity() {
         initLoadDataFromNetwork()
 
     }
+    override fun onResume() {
+        super.onResume()
+        mListResolution = config.getListResolution()
+        mIsExitConfirm = config.isDoubleClickExit()
+    }
 
+    private fun initResolution(){
+        mListResolution = config.getListResolution()
+        mIsExitConfirm = config.isDoubleClickExit()
+    }
     private fun initRecyclerView(){
         mainRecyclerView.layoutManager = mLayoutManager
         mainRecyclerView.adapter = mAdapter
@@ -141,6 +156,20 @@ class MainActivity : BaseActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        val currentTime = System.currentTimeMillis()
+        if (mIsExitConfirm){
+            if (currentTime-mPrevBackTime >= EXIT_CONFIRM_TIME){
+                mPrevBackTime = currentTime
+                snackPressAgainToExit()
+            }else{
+                super.onBackPressed()
+            }
+        }else{
+            super.onBackPressed()
+        }
+    }
+
     /* Event */
     private fun loadNewest(){
         snackLoading()
@@ -154,7 +183,7 @@ class MainActivity : BaseActivity() {
                     val tmpImage = it.toBingImage()
                     tmpList.add(tmpImage)
                 }
-                mRoom.bingImageDao().inserts(*tmpList.toTypedArray())
+                mRoom.bingImageDao().inserts(*tmpList.toTypedArray()) // 暂时用不上
                 tmpList.forEach {
                     mViewModel.addOrReplaceBingImage(it)
                 }
@@ -185,7 +214,7 @@ class MainActivity : BaseActivity() {
                         val tmpImage = it.toBingImage()
                         tmpList.add(tmpImage)
                     }
-                    mRoom.bingImageDao().inserts(*tmpList.toTypedArray())
+                    mRoom.bingImageDao().inserts(*tmpList.toTypedArray()) // 暂时用不上
                     tmpList.forEach {
                         mViewModel.addOrReplaceBingImage(it)
                     }
@@ -213,6 +242,9 @@ class MainActivity : BaseActivity() {
     private fun snackLoadAllFinish(){
         snack(R.string.mainSnackLoadAllFinish.toResString())
     }
+    private fun snackPressAgainToExit(){
+        snack(R.string.mainSnackPressAgainToExit.toResString())
+    }
     private fun closeDrawer(){
         mainDrawerLayout.closeDrawer(Gravity.START)
     }
@@ -233,17 +265,14 @@ class MainActivity : BaseActivity() {
 
         override fun onBindViewHolder(holder: BingImageHolder, pos: Int) {
             mViewModel.imageList.value?.get(pos)?.apply {
-                holder.setImageByUrl(this.getImageUrl(BingImage.Resolution.L_400_240))
+                holder.setImageByUrl(this.getImageUrl(mListResolution))
                 holder.setTitle(this.title)
                 holder.setTime(this.getTimeString())
                 holder.setOnClickListener(View.OnClickListener {
                     val intent = Intent(this@MainActivity, PreviewActivity::class.java)
                     intent.putExtra(PreviewActivity.INTENT_BING_IMAGE, this)
-                    startActivity(intent)
-//                    val pairImage = android.support.v4.util.Pair<View, String>(holder.image, "image")
-//                    val pairText  = android.support.v4.util.Pair<View, String>(holder.title, "title")
-//                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity, pairText).toBundle())
-//                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity, pairImage, pairText).toBundle())
+                    val pairImage = android.support.v4.util.Pair<View, String>(holder.image, "image")
+                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity, pairImage).toBundle())
                 })
             }
         }

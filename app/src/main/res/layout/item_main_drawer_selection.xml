@@ -15,7 +15,7 @@
         android:orientation="horizontal">
 
     <ImageView
-            android:tint="#666666"
+            android:tint="@color/tintGray"
             android:id="@+id/itemMainDrawerSelectionIcon"
             android:scaleType="centerCrop"
             tools:src="@drawable/ic_main_search"
@@ -29,13 +29,13 @@
             android:id="@+id/itemMainDrawerSelectionText"
             tools:text="2019 02 19"
             android:textSize="14sp"
-            android:textColor="#666666"
+            android:textColor="@color/tintGray"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
 
     <ImageView
-            android:tint="#666666"
+            android:tint="@color/tintGray"
             android:id="@+id/itemMainDrawerSelectionIconHint"
             android:scaleType="centerCrop"
             tools:src="@drawable/ic_main_search"

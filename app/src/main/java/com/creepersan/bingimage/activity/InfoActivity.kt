@@ -10,6 +10,7 @@ import android.webkit.WebViewClient
 import com.creepersan.bingimage.R
 import com.creepersan.bingimage.network.request.BingUrlRequest
 import com.creepersan.bingimage.network.response.BingUrlResponse
+import com.creepersan.bingimage.utils.getWebsiteLocalePostfix
 import kotlinx.android.synthetic.main.activity_info.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -38,7 +39,7 @@ class InfoActivity : BaseActivity() {
         settings.javaScriptEnabled = true
 
         infoWebView.setBackgroundColor(Color.TRANSPARENT)
-        infoWebView.loadUrl("file:///android_asset/web/info.html")
+        infoWebView.loadUrl("file:///android_asset/web/info${getWebsiteLocalePostfix()}.html")
 
         infoWebView.webViewClient = object :WebViewClient(){
             override fun onPageFinished(view: WebView?, url: String?) {

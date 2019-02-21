@@ -1,47 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="wrap_content"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/itemMainConstraintLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-            tools:src="@drawable/ic_launcher_background"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/itemMainImageImage"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"/>
+    <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
 
-    <TextView
-            android:id="@+id/itemMainImageTitle"
-            android:layout_margin="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:autoSizeTextType="uniform"
-            android:textColor="#FFFFFF"
-            android:shadowColor="#000000"
-            android:lines="1"
-            android:textSize="100sp"
-            android:shadowRadius="16"
-            tools:text="史前洞窟壁画国际艺术中心内的“高仿”拉斯科洞穴壁画"
-            android:layout_width="match_parent"
-            android:layout_height="20sp"/>
 
-    <TextView
-            android:id="@+id/itemMainImageTime"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="6dp"
-            app:layout_constraintBottom_toTopOf="@id/itemMainImageTitle"
-            app:layout_constraintStart_toStartOf="parent"
-            android:textColor="#FFFFFF"
-            android:shadowColor="#000000"
-            android:lines="1"
-            android:textSize="12sp"
-            android:shadowRadius="16"
-            tools:text="2018/03/18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <ImageView
+                tools:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/itemMainImageImage"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"/>
+
+        <TextView
+                android:background="@color/blackAlpha"
+                android:id="@+id/itemMainImageTitle"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/itemMainConstraintLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:autoSizeTextType="uniform"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:shadowRadius="16"
+                tools:text="史前洞窟壁画国际艺术中心内的“高仿”拉斯科洞穴壁画"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:background="@color/blackAlpha"
+                android:id="@+id/itemMainImageTime"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="6dp"
+                app:layout_constraintBottom_toTopOf="@id/itemMainImageTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:textSize="12sp"
+                android:shadowRadius="16"
+                tools:text="2018/03/18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    <!--</android.support.constraint.ConstraintLayout>-->
 
 </android.support.constraint.ConstraintLayout>

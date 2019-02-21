@@ -103,7 +103,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
             mViewModel.setDownloadDialogDefaultNotDisplay(dialogCheckBox.isChecked)
         }
         val alertDialog = AlertDialog.Builder(this)
-            .setTitle(R.string.previewDownloadDialogTitle)
             .setView(dialogView)
             .setPositiveButton(R.string.previewDownloadDialogPosButtonText.toResString()) { dialog, _ ->
                 downloadImage()
@@ -121,7 +120,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
         }
         return@lazy obj
     }
-
 
     override val layoutID: Int = R.layout.activity_preview
 
@@ -224,13 +222,14 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
     /* Action */
     private fun refreshImageResolution(){
+        val previewResolution = mViewModel.getPreviewResolution()
         Glide
             .with(this)
             .load(mViewModel.getPreviewImageUrl())
             .placeholder(R.drawable.image_main_default)
             .error(R.drawable.image_main_fail)
             .transition(DrawableTransitionOptions.withCrossFade())
-            .override(mViewModel.getPreviewResolution().getWidth(), mViewModel.getPreviewResolution().getHeight())
+            .override(previewResolution.getWidth(), previewResolution.getHeight())
             .into(previewImageView)
 
     }

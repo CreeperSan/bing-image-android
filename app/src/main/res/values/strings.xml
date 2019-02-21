@@ -1,80 +1,96 @@
 <resources>
-    <string name="app_name">Bing Image</string>
+    <string name="app_name">Bing Wallpaper</string>
 
-    <string name="mainSnackLoading">正在加载数据</string>
-    <string name="mainSnackNetworkError">网络连接失败，请检查您的网路连接</string>
-    <string name="mainSnackRequestFail">与服务器通讯失败，请稍后重试</string>
-    <string name="mainSnackLoadAllFinish">已加载全部数据</string>
-    <string name="mainDrawerHeaderHint">٩̋(๑˃́ꇴ˂̀๑) 每天新壁纸</string>
-    <string name="mainDrawerSelectionBing">必应</string>
-    <string name="mainDrawerSelectionGallery">图库</string>
-    <string name="mainDrawerSelectionInfo">关于</string>
-    <string name="mainDrawerSelectionHelp">帮助</string>
-    <string name="mainDrawerSelectionExit">退出</string>
-    <string name="mainDrawerSelectionWebsite">访问网页版</string>
-    <string name="mainDrawerSelectionSetting">设置</string>
-    <string name="mainDrawerSelectionFeedback">反馈</string>
-    <string name="mainFeedbackMailTitle">Android BingImage 反馈 : 请在这里输入问题名称</string>
+    <string name="mainSnackLoading">(｡•ˇωˇ•｡) Loading</string>
+    <string name="mainSnackNetworkError">⚆_⚆ Unable to connect to the internet</string>
+    <string name="mainSnackRequestFail">⚆_⚆ Unable to connect to the server</string>
+    <string name="mainSnackLoadAllFinish">( ͡° ͜ʖ ͡°) Already load all image data</string>
+    <string name="mainSnackPressAgainToExit">(╯ᐛ )╯Double tap back button to exit</string>
+    <string name="mainDrawerHeaderHint">٩̋(๑˃́ꇴ˂̀๑) New wallpaper daily</string>
+    <string name="mainDrawerSelectionGallery">Gallery</string>
+    <string name="mainDrawerSelectionInfo">About</string>
+    <string name="mainDrawerSelectionHelp">Help</string>
+    <string name="mainDrawerSelectionExit">Exit</string>
+    <string name="mainDrawerSelectionWebsite">Visit Website</string>
+    <string name="mainDrawerSelectionSetting">Setting</string>
+    <string name="mainDrawerSelectionFeedback">Feedback</string>
+    <string name="mainFeedbackMailTitle">Android BingImage Feedback : Question Here</string>
     <string name="mainFeedbackMailContentTemple">
-        问题描述\n\n\n
-        操作步骤\n\n\n
-        问题引起的后果\n\n\n
+        Question : \n\n\n
+        Step : \n\n\n
+        Result : \n\n\n
     </string>
 
-    <string name="previewMenuScreenResolution">预览分辨率</string>
-    <string name="previewMenuImageScale">图片缩放模式</string>
-    <string name="previewResolution1920x1200">1920×1200</string>
-    <string name="previewResolution1920x1080">1920×1080</string>
-    <string name="previewResolution1366x768">1366×768</string>
-    <string name="previewResolution1280x720">1280×720</string>
-    <string name="previewResolution1024x768">1024×768</string>
-    <string name="previewResolution800x600">800×600</string>
-    <string name="previewResolution800x480">800×480</string>
-    <string name="previewResolution640x480">640×480</string>
-    <string name="previewResolution400x240">400×240</string>
-    <string name="previewResolution320x240">320×240</string>
-    <string name="previewResolution1080x1920">1080×1920</string>
-    <string name="previewResolution768x1366">768×1366</string>
-    <string name="previewResolution768x1280">768×1280</string>
-    <string name="previewResolution720x1280">720×1080</string>
-    <string name="previewResolution480x800">480×800</string>
-    <string name="previewResolution480x640">480×640</string>
-    <string name="previewResolution240x400">240×400</string>
-    <string name="previewResolution240x320">240×320</string>
-    <string name="previewResolutionUnknown">未知分辨率</string>
-    <string name="previewDownloadDialogHint">你可以长按下载按钮重新打开此对话框</string>
-    <string name="previewDownloadDialogCheckbox">下次不再显示</string>
-    <string name="previewDownloadDialogTitle">下载图片</string>
-    <string name="previewDownloadDialogPosButtonText">下载</string>
-    <string name="previewDownloadDialogNegButtonText">取消</string>
-    <string name="previewToastDownload">正在下载…</string>
+    <string name="previewMenuScreenResolution">Preview resolution</string>
+    <string name="previewResolution1920x1200" translatable="false">1920×1200</string>
+    <string name="previewResolution1920x1080" translatable="false">1920×1080</string>
+    <string name="previewResolution1366x768" translatable="false">1366×768</string>
+    <string name="previewResolution1280x720" translatable="false">1280×720</string>
+    <string name="previewResolution1024x768" translatable="false">1024×768</string>
+    <string name="previewResolution800x600" translatable="false">800×600</string>
+    <string name="previewResolution800x480" translatable="false">800×480</string>
+    <string name="previewResolution640x480" translatable="false">640×480</string>
+    <string name="previewResolution400x240" translatable="false">400×240</string>
+    <string name="previewResolution320x240" translatable="false">320×240</string>
+    <string name="previewResolution1080x1920" translatable="false">1080×1920</string>
+    <string name="previewResolution768x1366" translatable="false">768×1366</string>
+    <string name="previewResolution768x1280" translatable="false">768×1280</string>
+    <string name="previewResolution720x1280" translatable="false">720×1080</string>
+    <string name="previewResolution480x800" translatable="false">480×800</string>
+    <string name="previewResolution480x640" translatable="false">480×640</string>
+    <string name="previewResolution240x400" translatable="false">240×400</string>
+    <string name="previewResolution240x320" translatable="false">240×320</string>
+    <string name="previewResolutionUnknown">Unknown resolution</string>
+    <string name="previewDownloadDialogHint">You can long press this button to reopen this dialog</string>
+    <string name="previewDownloadDialogCheckbox">Don\'t show again</string>
+    <string name="previewDownloadDialogPosButtonText">Download</string>
+    <string name="previewDownloadDialogNegButtonText">Cancel</string>
+    <string name="previewToastDownload">Downloading …</string>
 
-    <string name="settingTitle">设置</string>
-    <string name="settingBasicCatalog">基本设置</string>
-    <string name="settingBasicDoubleClickTitle">双击退出</string>
-    <string name="settingBasicDoubleClickContent">快速按下2次返回键退出应用</string>
-    <string name="settingViewSettingCatalog">预览设置</string>
-    <string name="settingViewSettingViewResolutionTitle">首页分辨率</string>
-    <string name="settingViewSettingViewPreviewTitle">预览页分辨率</string>
-    <string name="settingViewSettingViewDownloadTitle">下载分辨率</string>
-    <string name="settingOtherCatalog">其他设置</string>
-    <string name="settingOtherClearCacheTitle">清除缓存</string>
-    <string name="settingOtherClearCacheContent">当前缓存大小 : %s</string>
+    <string name="settingTitle">Setting</string>
+    <string name="settingBasicCatalog">Basic Setting</string>
+    <string name="settingBasicDoubleClickTitle">Double tap to exit</string>
+    <string name="settingBasicDoubleClickContent">Double tap back button to exit application</string>
+    <string name="settingViewSettingCatalog">View Setting</string>
+    <string name="settingViewSettingViewResolutionTitle">List image resolution</string>
+    <string name="settingViewSettingViewPreviewTitle">Preview image resolution</string>
+    <string name="settingViewSettingViewDownloadTitle">Download image resolution</string>
+    <string name="settingViewDownloadHideDownloadDialogTitle">Don\'t show download dialog</string>
+    <string name="settingViewDownloadHideDownloadDialogContent">Hide download dialog, you can also turn it on by long press the download button
+    </string>
+    <string name="settingOtherCatalog">Other Setting</string>
+    <string name="settingOtherClearCacheSizeTitle">Cache maximum size </string>
+    <string name="settingOtherClearCacheTitle">Clean cache</string>
+    <string name="settingOtherClearCacheContent">Cache size : %sM</string>
+    <string name="settingOtherClearCacheHint">Cleaning cache…</string>
+    <string name="settingOtherClearCacheContentPrepare">Calculating cache size…</string>
+    <string name="settingOtherPermissionDescriptionTitle">Permission description</string>
+    <string name="settingOtherPermissionDescriptionContent">Check why we need these permission</string>
+    <string name="settingDialogConfirm">OK</string>
+    <string name="settingDialogCancel">Cancel</string>
+    <string name="settingErrorToast">Error</string>
 
-    <string name="galleryMenuShare">分享</string>
-    <string name="galleryMenuDelete">删除</string>
-    <string name="galleryMenuSetAsWallpaper">设为壁纸</string>
-    <string name="galleryShareTo">分享到..</string>
-    <string name="gallerySetWallpaper">设置壁纸</string>
-    <string name="galleryHintFileNotExist">文件不存在</string>
+    <string name="galleryMenuShare">Share</string>
+    <string name="galleryMenuDelete">Delete</string>
+    <string name="galleryMenuSetAsWallpaper">Set as wallpaper</string>
+    <string name="galleryShareTo">Share to …</string>
+    <string name="gallerySetWallpaper">Set wallpaper</string>
+    <string name="galleryHintFileNotExist">File not exist</string>
 
-    <string name="galleryTitle">图库</string>
+    <string name="galleryTitle">Gallery</string>
 
-    <string name="helpTitle">帮助</string>
+    <string name="helpTitle">Help</string>
 
-    <string name="infoTitle">关于</string>
+    <string name="infoTitle">About</string>
 
-    <string name="downloadServiceNotificationChannelName">下载通知</string>
-    <string name="downloadServiceNotificationDownloading">下载中</string>
-    <string name="downloadServiceNotificationDownloadFinish">下载完成，点击查看</string>
+    <string name="bootFileErrorText">Can not initialize folder, please make sure there are no any file or folder named "BingImage" in your external storage root path and try again.</string>
+    <string name="bootPermissionErrorText">Can not get permission,please give us permission and try again</string>
+    <string name="bootPermissionErrorButton">Check all permission</string>
+
+    <string name="permissionDescriptionTitle">Permission Description</string>
+
+    <string name="downloadServiceNotificationChannelName">Download Notification</string>
+    <string name="downloadServiceNotificationDownloading">Downloading…</string>
+    <string name="downloadServiceNotificationDownloadFinish">Download finish, tap to check</string>
+    <string name="settingOtherClearCacheDialogCleanComplete">Clean complete</string>
 </resources>

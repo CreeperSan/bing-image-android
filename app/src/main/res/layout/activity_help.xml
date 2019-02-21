@@ -10,8 +10,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
         <android.support.v7.widget.Toolbar
-                app:titleTextColor="#FFFFFF"
-                app:navigationIcon="@drawable/ic_back_white"
+                app:titleTextColor="@color/colorAccent"
+                app:navigationIcon="@drawable/ic_back_accent"
                 app:title="@string/helpTitle"
                 android:id="@+id/helpToolbar"
                 android:layout_width="match_parent"

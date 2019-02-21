@@ -9,9 +9,9 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
         <android.support.v7.widget.Toolbar
-                app:titleTextColor="#FFFFFF"
+                app:titleTextColor="@color/colorAccent"
                 app:title="@string/settingTitle"
-                app:navigationIcon="@drawable/ic_back_white"
+                app:navigationIcon="@drawable/ic_back_accent"
                 android:id="@+id/settingToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"/>
