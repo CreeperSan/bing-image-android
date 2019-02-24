@@ -180,7 +180,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
     private fun downloadImage(){
         val bingimage = mViewModel.bingImage.value!!
         val resolution = mViewModel.getDownloadResolution()
-        val url = bingimage.getImageUrl(resolution)
         toast(R.string.previewToastDownload.toResString())
 
         application.downloadImage(bingimage, resolution)

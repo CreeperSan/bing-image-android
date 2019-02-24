@@ -33,8 +33,9 @@ class PreviewModel : ViewModel() {
         return previewResolution.value!!
     }
     fun setPreviewResolution(resolution: Resolution){
+        config.setPreviewResolutionSync(resolution)
         previewResolution.value = resolution
-        config.setPreviewResolution(resolution)
+//        config.setPreviewResolution(resolution)
     }
     fun observerPreviewResolution(owner:LifecycleOwner, observer: Observer<Resolution>){
         previewResolution.observe(owner, observer)
@@ -44,12 +45,14 @@ class PreviewModel : ViewModel() {
         return downloadResolution.value!!
     }
     fun setDownloadResolution(resolution: Resolution){
+        config.setDownloadResolutionSync(resolution)
         downloadResolution.value = resolution
-        config.setDownloadResolution(resolution)
+//        config.setDownloadResolution(resolution)
     }
 
     fun getPreviewImageUrl():String{
-        return bingImage.value?.getImageUrl(previewResolution.value!!) ?: ""
+//        return bingImage.value?.getImageUrl(previewResolution.value!!) ?: ""
+        return bingImage.value?.getImageUrl(config.getPreviewResolution()) ?: ""
     }
 
     fun isDownloadDialogDefaultNotDisplay():Boolean{

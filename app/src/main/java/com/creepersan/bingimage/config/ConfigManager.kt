@@ -1,5 +1,6 @@
 package com.creepersan.bingimage.config
 
+import android.annotation.SuppressLint
 import android.content.Context
 import com.creepersan.bingimage.database.bean.BingImage
 import com.creepersan.bingimage.database.bean.BingImage.Resolution
@@ -43,11 +44,17 @@ class ConfigManager(context: Context){
     fun setPreviewResolution(resolution:Resolution){
         mPreviewConfig.edit().putInt(KEY_PREVIEW_RESOLUTION, resolution.value).apply()
     }
+    fun setPreviewResolutionSync(resolution:Resolution){
+        mPreviewConfig.edit().putInt(KEY_PREVIEW_RESOLUTION, resolution.value).commit()
+    }
     fun getDownloadResolution():Resolution{
         return mPreviewConfig.getInt(KEY_DOWNLOAD_RESOLUTION, Resolution.L_1920_1080.value).toResolution()
     }
     fun setDownloadResolution(resolution:Resolution){
         mPreviewConfig.edit().putInt(KEY_DOWNLOAD_RESOLUTION, resolution.value).apply()
+    }
+    fun setDownloadResolutionSync(resolution:Resolution){
+        mPreviewConfig.edit().putInt(KEY_DOWNLOAD_RESOLUTION, resolution.value).commit()
     }
     fun getListResolution():Resolution{
         return mPreviewConfig.getInt(KEY_LIST_RESOLUTION, Resolution.L_400_240.value).toResolution()
