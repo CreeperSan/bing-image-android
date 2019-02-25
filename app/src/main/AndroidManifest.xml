@@ -30,6 +30,7 @@
         <activity android:name=".activity.HelpActivity"/>
         <activity android:name=".activity.SettingActivity"/>
         <activity android:name=".activity.PermissionDescriptionActivity"/>
+        <activity android:name=".activity.RandomActivity"/>
 
         <service android:name=".download.DownloadService"/>
 

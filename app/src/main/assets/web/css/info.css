@@ -114,6 +114,7 @@ img {
 .listItemContentGroupDiv {
     flex-direction: column;
     display: none;
+    margin-top: 16px;
 }
 
 .listUpdateVersion {

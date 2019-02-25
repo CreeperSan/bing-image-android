@@ -75,4 +75,7 @@
     <string name="downloadServiceNotificationDownloading">ダウンロード中…</string>
     <string name="downloadServiceNotificationDownloadFinish">ダウンロード完了しました,タップで確認するた</string>
     <string name="settingOtherClearCacheDialogCleanComplete">クリア完了</string>
+    <string name="randomMenuRefresh">ラッキー</string>
+    <string name="mainDrawerSelectionRandom">ラッキー</string>
+    <string name="randomTitle">ラッキー</string>
 </resources>

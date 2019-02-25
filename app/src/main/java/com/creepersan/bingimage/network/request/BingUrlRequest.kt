@@ -1,5 +1,6 @@
 package com.creepersan.bingimage.network.request
 
+import com.creepersan.bingimage.network.response.BingRandomResponse
 import com.creepersan.bingimage.network.response.BingUrlResponse
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -16,7 +17,7 @@ interface BingUrlRequest{
     fun getBingUrl(@Query("count") count:Int=12, @Query("page") page:Int=12):Call<BingUrlResponse>
 
     @GET("/api/v1/random")
-    fun getBingRandom(@Query("count") count:Int=3):Call<BingUrlResponse>
+    fun getBingRandom(@Query("count") count:Int=3):Call<BingRandomResponse>
 
     @Streaming
     @GET("api/v1/download/{date}.jpg")

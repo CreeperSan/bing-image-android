@@ -97,6 +97,11 @@ class MainActivity : BaseActivity() {
             toActivity(GalleryActivity::class.java)
             closeDrawer()
         }))
+        // 随机
+        mDrawerList.add(SelectionDrawerItem(R.drawable.ic_random, R.string.mainDrawerSelectionRandom.toResString(),{
+            toActivity(RandomActivity::class.java)
+            closeDrawer()
+        }))
         // 设置
         mDrawerList.add(SelectionDrawerItem(R.drawable.ic_settings, R.string.mainDrawerSelectionSetting.toResString(),{
             toActivity(SettingActivity::class.java)
@@ -230,15 +235,6 @@ class MainActivity : BaseActivity() {
     }
 
     /* Action */
-    private fun snackLoading(){
-        snack(R.string.mainSnackLoading.toResString(), Snackbar.LENGTH_INDEFINITE)
-    }
-    private fun snackNetworkError(){
-        snack(R.string.mainSnackNetworkError.toResString())
-    }
-    private fun snackServerError(){
-        snack(R.string.mainSnackRequestFail.toResString())
-    }
     private fun snackLoadAllFinish(){
         snack(R.string.mainSnackLoadAllFinish.toResString())
     }
@@ -248,9 +244,6 @@ class MainActivity : BaseActivity() {
     private fun closeDrawer(){
         mainDrawerLayout.closeDrawer(Gravity.START)
     }
-
-    /* Observer */
-
 
     /* ViewModel */
 

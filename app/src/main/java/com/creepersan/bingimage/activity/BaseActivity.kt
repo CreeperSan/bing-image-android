@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
+import com.creepersan.bingimage.R
 import com.creepersan.bingimage.application.BingImageApplication
 import com.creepersan.bingimage.network.BASE_URL
 import retrofit2.Retrofit
@@ -51,6 +52,16 @@ abstract class BaseActivity : AppCompatActivity(){
         mSnackBar.dismiss()
     }
 
+    /* snack */
+    protected fun snackLoading(){
+        snack(R.string.mainSnackLoading.toResString(), Snackbar.LENGTH_INDEFINITE)
+    }
+    protected fun snackNetworkError(){
+        snack(R.string.mainSnackNetworkError.toResString())
+    }
+    protected fun snackServerError(){
+        snack(R.string.mainSnackRequestFail.toResString())
+    }
 
     /* start Activity */
     fun <T:BaseActivity> toActivity(clazz:Class<T>, isFinish:Boolean = false, vararg pair: Pair<String, Any>){

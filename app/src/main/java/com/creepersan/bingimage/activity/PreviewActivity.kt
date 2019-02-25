@@ -221,14 +221,14 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
     /* Action */
     private fun refreshImageResolution(){
-        val previewResolution = mViewModel.getPreviewResolution()
+//        val previewResolution = mViewModel.getPreviewResolution()
         Glide
             .with(this)
             .load(mViewModel.getPreviewImageUrl())
             .placeholder(R.drawable.image_main_default)
             .error(R.drawable.image_main_fail)
             .transition(DrawableTransitionOptions.withCrossFade())
-            .override(previewResolution.getWidth(), previewResolution.getHeight())
+//            .override(previewResolution.getWidth(), previewResolution.getHeight())
             .into(previewImageView)
 
     }

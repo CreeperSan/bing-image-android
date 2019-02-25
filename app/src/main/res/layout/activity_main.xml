@@ -64,6 +64,12 @@
 
         </android.support.v4.widget.SwipeRefreshLayout>
 
+        <ImageView
+                android:src="@drawable/shadow_toolbar"
+                app:layout_constraintTop_toTopOf="@id/mainRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+
     </android.support.constraint.ConstraintLayout>
 
     <android.support.v7.widget.RecyclerView

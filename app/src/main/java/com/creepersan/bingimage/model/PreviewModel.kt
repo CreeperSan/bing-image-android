@@ -30,7 +30,8 @@ class PreviewModel : ViewModel() {
     }
 
     fun getPreviewResolution():Resolution{
-        return previewResolution.value!!
+//        return previewResolution.value!!
+        return config.getPreviewResolution()
     }
     fun setPreviewResolution(resolution: Resolution){
         config.setPreviewResolutionSync(resolution)

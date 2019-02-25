@@ -74,4 +74,7 @@
     <string name="downloadServiceNotificationDownloading">下载中</string>
     <string name="downloadServiceNotificationDownloadFinish">下载完成，点击查看</string>
     <string name="settingOtherClearCacheDialogCleanComplete">清除完成</string>
+    <string name="randomMenuRefresh">刷新</string>
+    <string name="mainDrawerSelectionRandom">手气不错</string>
+    <string name="randomTitle">手气不错</string>
 </resources>

@@ -93,4 +93,7 @@
     <string name="downloadServiceNotificationDownloading">Downloading…</string>
     <string name="downloadServiceNotificationDownloadFinish">Download finish, tap to check</string>
     <string name="settingOtherClearCacheDialogCleanComplete">Clean complete</string>
+    <string name="randomMenuRefresh">Refresh</string>
+    <string name="mainDrawerSelectionRandom">Feels lucky</string>
+    <string name="randomTitle">Feels Lucky</string>
 </resources>
