@@ -11,45 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a672d2-a09d-47ca-9aae-a1a97be7dad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/RandomActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/RandomModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_random.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shadow_toolbar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_random.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_room_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_room_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_liyi_view_image_viewer_2_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_liyi_view_image_viewer_2_1_2_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/css/info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/info_ja.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/info_ja.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/info_zh_cn.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/info_zh_cn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/web/info_zh_tw.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/web/info_zh_tw.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/PreviewActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/network/request/BingUrlRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/network/request/BingUrlRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-ja-rJP/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-ja-rJP/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-zh-rTW/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-zh/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-zh/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,19 +48,19 @@
     <session id="589635208">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.3" value="6" />
           <entry key="project.open.time.4" value="10" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Translations Editor" value="7" />
+          <entry key="Translations Editor" value="8" />
           <entry key="apk" value="1" />
           <entry key="class" value="8" />
           <entry key="css" value="1" />
@@ -96,12 +71,12 @@
           <entry key="java" value="96" />
           <entry key="kt" value="330" />
           <entry key="png" value="7" />
-          <entry key="xml" value="240" />
+          <entry key="xml" value="241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="" value="7" />
+          <entry key="" value="8" />
           <entry key="APK" value="1" />
           <entry key="CLASS" value="8" />
           <entry key="CSS" value="1" />
@@ -112,7 +87,7 @@
           <entry key="JAVA" value="96" />
           <entry key="Kotlin" value="330" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="240" />
+          <entry key="XML" value="241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -138,7 +113,17 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -2728,6 +2713,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="strings" type="c431d0b8:AndroidResGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2741,43 +2755,6 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="bingimage" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="web" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bing-image-android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2908,6 +2885,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21352503" />
@@ -2920,13 +2898,13 @@
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49946752" weight="0.32921347" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946752" weight="0.2752809" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49893504" weight="0.32921347" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" sideWeight="0.49893504" weight="0.32921347" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" sideWeight="0.49893504" weight="0.32921347" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.32921347" />
       <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49893504" weight="0.32921347" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5005325" side_tool="true" weight="0.32921347" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946752" weight="0.32921347" />
-      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49574015" weight="0.21910113" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.49574015" visible="true" weight="0.21910113" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32921347" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -2981,13 +2959,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6b2b26af9ad41a2c39dfe0761ca773e2/jars/classes.jar!/android/support/design/widget/Snackbar.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/6b2b26af9ad41a2c39dfe0761ca773e2/jars/classes.jar!/android/support/design/widget/Snackbar.class" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -3074,27 +3046,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/activity_random.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/random.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#194#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/activity_random.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/random.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/model/PreviewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -3122,21 +3082,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_random_image.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/RandomImageHolder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_random_image.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/view/holder/RandomImageHolder.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_main_image.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -3166,32 +3113,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creepersan/bingimage/activity/BaseActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding>
-            <element signature="e#762#912#2" />
-            <element signature="e#1164#1300#0" />
-            <element signature="e#1246#1294#1" />
-            <element signature="e#1331#1403#0" />
-            <element signature="e#1536#1687#0" />
-            <element signature="e#1707#1742#0" />
-            <element signature="e#1840#1865#0" expanded="true" />
-            <element signature="e#1966#1996#0" expanded="true" />
-            <element signature="e#2068#2097#0" expanded="true" />
-            <element signature="e#1879#3956#0" />
-            <element signature="e#1943#3866#2" />
-            <element signature="e#3918#3950#1" />
-            <element signature="e#4001#4039#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3213,22 +3138,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" column="24" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="e#40#181#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="android-dummy:///Users/creepersan/project/bing-image-android/app/Translations Editor">
-      <provider selected="true" editor-type-id="string-resource-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_refresh_accent.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_refresh_accent.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_random.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -3236,32 +3149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-146">
           <caret line="123" column="52" selection-start-line="123" selection-start-column="52" selection-end-line="123" selection-end-column="52" />
-          <folding>
-            <element signature="e#2002#3989#2" />
-            <element signature="e#2234#3965#2" />
-            <element signature="e#4030#6077#2" />
-            <element signature="e#5303#5398#2" />
-            <element signature="e#5574#5667#2" />
-            <element signature="e#5758#5819#2" />
-            <element signature="e#5867#6047#0" />
-            <element signature="e#5897#6037#0" />
-            <element signature="e#6194#6343#0" />
-            <element signature="e#6375#6529#0" />
-            <element signature="e#6557#6722#0" />
-            <element signature="e#6604#6716#1" />
-            <element signature="e#6753#6939#0" />
-            <element signature="e#6983#7385#0" />
-            <element signature="e#7028#7232#2" />
-            <element signature="e#7093#7149#1" />
-            <element signature="e#7153#7221#1" />
-            <element signature="e#7280#7379#2" />
-            <element signature="e#7420#7457#0" />
-            <element signature="e#7517#7684#0" />
-            <element signature="e#7594#7648#0" />
-            <element signature="e#7734#7972#0" />
-            <element signature="e#7863#7892#0" expanded="true" />
-            <element signature="e#8155#9302#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3269,10 +3156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="65" selection-end-column="52" />
-          <folding>
-            <element signature="e#3598#3632#0" expanded="true" />
-            <element signature="e#11327#12819#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3306,113 +3189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="364" column="5" selection-start-line="364" selection-start-column="5" selection-end-line="364" selection-end-column="5" />
-          <folding>
-            <element signature="e#1083#1313#0" />
-            <element signature="e#1356#2281#2" />
-            <element signature="e#1422#2275#2" />
-            <element signature="e#1467#1569#0" />
-            <element signature="e#2326#4619#2" />
-            <element signature="e#2878#2957#2" />
-            <element signature="e#3033#3098#2" />
-            <element signature="e#3248#3620#0" />
-            <element signature="e#3345#3474#0" />
-            <element signature="e#3376#3460#1" />
-            <element signature="e#3649#4613#0" />
-            <element signature="e#3690#3744#0" />
-            <element signature="e#3789#3843#0" />
-            <element signature="e#3880#3930#0" />
-            <element signature="e#3972#4031#0" />
-            <element signature="e#4065#4120#0" />
-            <element signature="e#4157#4209#0" />
-            <element signature="e#4282#4342#0" />
-            <element signature="e#4400#4461#0" />
-            <element signature="e#4487#4535#0" />
-            <element signature="e#4558#4603#0" />
-            <element signature="e#4664#6246#2" />
-            <element signature="e#5120#5188#2" />
-            <element signature="e#5249#5310#2" />
-            <element signature="e#5395#6240#0" />
-            <element signature="e#5450#5548#0" />
-            <element signature="e#5601#5647#0" />
-            <element signature="e#5670#5715#0" />
-            <element signature="e#5738#5783#0" />
-            <element signature="e#5819#5875#0" />
-            <element signature="e#5920#6028#0" />
-            <element signature="e#6067#6121#0" />
-            <element signature="e#6176#6230#0" />
-            <element signature="e#6287#7388#2" />
-            <element signature="e#6698#7382#0" />
-            <element signature="e#6751#6880#0" />
-            <element signature="e#6903#6948#0" />
-            <element signature="e#6971#7016#0" />
-            <element signature="e#7053#7105#0" />
-            <element signature="e#7144#7198#0" />
-            <element signature="e#7229#7285#0" />
-            <element signature="e#7319#7372#0" />
-            <element signature="e#7620#7738#0" />
-            <element signature="e#7769#7868#0" />
-            <element signature="e#7823#7862#2" />
-            <element signature="e#7895#15127#0" />
-            <element signature="e#8192#8475#2" />
-            <element signature="e#8932#9072#2" />
-            <element signature="e#9126#9344#2" />
-            <element signature="e#9753#10578#2" />
-            <element signature="e#10016#10485#2" />
-            <element signature="e#10148#10380#1" />
-            <element signature="e#10384#10471#1" />
-            <element signature="e#10780#11614#2" />
-            <element signature="e#11046#11521#2" />
-            <element signature="e#11178#11416#1" />
-            <element signature="e#11420#11507#1" />
-            <element signature="e#11818#12655#2" />
-            <element signature="e#12085#12562#2" />
-            <element signature="e#12217#12457#1" />
-            <element signature="e#12461#12548#1" />
-            <element signature="e#12903#13198#2" />
-            <element signature="e#13530#14544#2" />
-            <element signature="e#13791#14424#2" />
-            <element signature="e#13886#14188#2" />
-            <element signature="e#14425#14523#2" />
-            <element signature="e#14559#14610#2" />
-            <element signature="e#14611#14783#2" />
-            <element signature="e#15019#15120#2" />
-            <element signature="e#15162#15286#0" />
-            <element signature="e#15331#15655#0" />
-            <element signature="e#15435#15620#1" />
-            <element signature="e#15505#15559#2" />
-            <element signature="e#15624#15649#1" />
-            <element signature="e#15676#15942#0" />
-            <element signature="e#15773#15936#1" />
-            <element signature="e#15870#15926#1" />
-            <element signature="e#16070#16296#0" />
-            <element signature="e#16131#16187#0" />
-            <element signature="e#16235#16290#0" />
-            <element signature="e#16398#17488#0" />
-            <element signature="e#16576#16637#0" />
-            <element signature="e#16680#16726#0" />
-            <element signature="e#16811#17481#0" />
-            <element signature="e#16842#16880#1" />
-            <element signature="e#17113#17470#2" />
-            <element signature="e#17179#17377#1" />
-            <element signature="e#17229#17331#1" />
-            <element signature="e#17661#18093#0" />
-            <element signature="e#17746#17793#0" />
-            <element signature="e#17832#17884#0" />
-            <element signature="e#17914#17963#0" />
-            <element signature="e#18026#18087#0" />
-            <element signature="e#18183#20258#0" />
-            <element signature="e#18242#18566#0" />
-            <element signature="e#18657#19077#0" />
-            <element signature="e#19120#19168#0" />
-            <element signature="e#19256#19974#0" />
-            <element signature="e#19370#19416#0" />
-            <element signature="e#19460#19594#0" />
-            <element signature="e#19637#19770#0" />
-            <element signature="e#19815#19950#0" />
-            <element signature="e#20022#20251#0" />
-            <element signature="e#20064#20241#2" />
-            <element signature="e#20136#20227#1" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3420,9 +3196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
-          <folding>
-            <element signature="e#43#797#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3458,6 +3231,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
           <caret line="218" column="46" selection-start-line="218" selection-start-column="46" selection-end-line="218" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="android-dummy:///Users/creepersan/project/bing-image-android/app/Translations Editor">
+      <provider selected="true" editor-type-id="string-resource-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="52" />
         </state>
       </provider>
     </entry>
