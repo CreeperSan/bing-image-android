@@ -18,6 +18,10 @@ An Android APP for [Bing-Image](https://github.com/CreeperSan/bing-image)
 
    运行
 
+## Server 
+
+Check [here](https://github.com/CreeperSan/bing-image)
+
 ## Screenshot
 
 ![](screenshot/01.png)
