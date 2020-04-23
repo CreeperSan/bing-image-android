@@ -1,18 +1,19 @@
 package com.creepersan.bingimage.activity
 
-import android.arch.lifecycle.*
-import android.arch.persistence.room.Room
+import androidx.lifecycle.*
+import androidx.room.Room
 import android.content.Intent
 import android.net.Uri
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import com.google.android.material.snackbar.Snackbar
+import androidx.core.app.ActivityOptionsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.GravityCompat
 import com.creepersan.bingimage.R
 import com.creepersan.bingimage.database.BingImageDatabase
 import com.creepersan.bingimage.database.DB_BINGIMAGE
@@ -42,7 +43,8 @@ class MainActivity : BaseActivity() {
 
     private val mViewModel by lazy { ViewModelProviders.of(this).get(MainModel::class.java) }
     private val mRoom by lazy { Room.databaseBuilder(applicationContext, BingImageDatabase::class.java, DB_BINGIMAGE).allowMainThreadQueries().build() } // 暂时不需要，后面再考虑功能
-    private val mLayoutManager = LinearLayoutManager(this)
+    private val mLayoutManager =
+        LinearLayoutManager(this)
     private val mAdapter = ImageAdapter()
     private val mDrawerList = ArrayList<BaseDrawerItem>()
     private lateinit var mListResolution : BingImage.Resolution
@@ -77,7 +79,7 @@ class MainActivity : BaseActivity() {
     }
     private fun initDrawerButton(){
         mainLeftIcon.setOnClickListener {
-            mainDrawerLayout.openDrawer(Gravity.START)
+            mainDrawerLayout.openDrawer(GravityCompat.START)
         }
     }
     private fun initSwipeRefreshView(){
@@ -140,7 +142,8 @@ class MainActivity : BaseActivity() {
             System.exit(0)
         }))
         // 设置
-        mainDrawerRecyclerView.layoutManager = LinearLayoutManager(this)
+        mainDrawerRecyclerView.layoutManager =
+            LinearLayoutManager(this)
         mainDrawerRecyclerView.adapter = DrawerAdapter()
     }
     private fun initRecyclerViewScrollListener(){
@@ -264,7 +267,7 @@ class MainActivity : BaseActivity() {
                 holder.setOnClickListener(View.OnClickListener {
                     val intent = Intent(this@MainActivity, PreviewActivity::class.java)
                     intent.putExtra(PreviewActivity.INTENT_BING_IMAGE, this)
-                    val pairImage = android.support.v4.util.Pair<View, String>(holder.image, "image")
+                    val pairImage = androidx.core.util.Pair<View, String>(holder.image, "image")
                     startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity, pairImage).toBundle())
                 })
             }

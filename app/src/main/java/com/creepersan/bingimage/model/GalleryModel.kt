@@ -1,9 +1,9 @@
 package com.creepersan.bingimage.model
 
-import android.arch.lifecycle.LifecycleOwner
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import com.creepersan.bingimage.activity.GalleryActivity
 import java.io.File
 import java.util.ArrayList

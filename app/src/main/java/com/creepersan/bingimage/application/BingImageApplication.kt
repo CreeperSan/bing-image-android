@@ -1,7 +1,7 @@
 package com.creepersan.bingimage.application
 
 import android.app.Application
-import android.arch.persistence.room.Room
+import androidx.room.Room
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent

@@ -1,14 +1,15 @@
 package com.creepersan.bingimage.activity
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.core.app.ActivityOptionsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.creepersan.bingimage.R
 import com.creepersan.bingimage.database.bean.BingImage
 import com.creepersan.bingimage.model.RandomModel
@@ -47,7 +48,8 @@ class RandomActivity : BaseActivity() {
         }
     }
     private fun initRecyclerView(){
-        randomRecyclerView.layoutManager = LinearLayoutManager(this)
+        randomRecyclerView.layoutManager =
+            LinearLayoutManager(this)
         randomRecyclerView.adapter = mAdapter
     }
     private fun initObserver(){
@@ -118,7 +120,7 @@ class RandomActivity : BaseActivity() {
                 holder.setOnClickListener(View.OnClickListener {
                     val intent = Intent(this@RandomActivity, PreviewActivity::class.java)
                     intent.putExtra(PreviewActivity.INTENT_BING_IMAGE, this)
-                    val pairImage = android.support.v4.util.Pair<View, String>(holder.image, "image")
+                    val pairImage = androidx.core.util.Pair<View, String>(holder.image, "image")
                     startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@RandomActivity, pairImage).toBundle())
                 })
             }

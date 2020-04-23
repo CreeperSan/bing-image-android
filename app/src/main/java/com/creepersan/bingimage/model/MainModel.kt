@@ -1,7 +1,7 @@
 package com.creepersan.bingimage.model
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.creepersan.bingimage.database.bean.BingImage
 import com.creepersan.bingimage.network.request.BingUrlRequest
 import com.creepersan.bingimage.network.response.BingUrlResponse

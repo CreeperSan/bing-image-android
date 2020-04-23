@@ -1,10 +1,11 @@
 package com.creepersan.bingimage.activity
 
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.os.Parcelable
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
 import com.creepersan.bingimage.R
@@ -30,19 +31,49 @@ abstract class BaseActivity : AppCompatActivity(){
     val fileManager by lazy { application.getFileManager() }
     val config by lazy { application.config }
 
-    private val mSnackBar by lazy { Snackbar.make(rootView,"",Snackbar.LENGTH_SHORT) }
+    private val mSnackBar by lazy { Snackbar.make(rootView,"",
+        Snackbar.LENGTH_SHORT) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initTheme()
+        // 设置布局
         if(layoutID != Int.MIN_VALUE){
             setContentView(layoutID)
         }
     }
 
+    /**
+     * 设置主题（适配暗黑模式 API29 Android Q）
+     */
+    private fun initTheme(){
+        when(resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK){
+            Configuration.UI_MODE_NIGHT_YES -> { // 开启暗黑模式
+                setTheme(R.style.AppTheme_Black)
+            }
+            Configuration.UI_MODE_NIGHT_NO -> { // 没有开启暗黑模式
+                setTheme(R.style.AppTheme_Default)
+            }
+        }
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        when(newConfig.uiMode and Configuration.UI_MODE_NIGHT_MASK){
+            Configuration.UI_MODE_NIGHT_YES -> { // 开启暗黑模式
+                setTheme(R.style.AppTheme_Black)
+            }
+            Configuration.UI_MODE_NIGHT_NO -> { // 没有开启暗黑模式
+                setTheme(R.style.AppTheme_Default)
+            }
+        }
+        recreate()
+    }
+
     fun toast(content:String){
         Toast.makeText(this, content, Toast.LENGTH_SHORT).show()
     }
-    fun snack(content:CharSequence, length:Int=Snackbar.LENGTH_SHORT, actionName:CharSequence="", action:View.OnClickListener?=null){
+    fun snack(content:CharSequence, length:Int= Snackbar.LENGTH_SHORT, actionName:CharSequence="", action:View.OnClickListener?=null){
         mSnackBar.setText(content)
         mSnackBar.setAction(actionName, action)
         mSnackBar.duration = length

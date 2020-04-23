@@ -1,6 +1,6 @@
 package com.creepersan.bingimage.model
 
-import android.arch.lifecycle.*
+import androidx.lifecycle.*
 import com.creepersan.bingimage.database.bean.BingImage
 import java.lang.Exception
 import java.util.ArrayList

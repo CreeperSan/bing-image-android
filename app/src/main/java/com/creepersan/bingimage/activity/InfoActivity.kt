@@ -1,7 +1,7 @@
 package com.creepersan.bingimage.activity
 
 import android.app.Activity
-import android.arch.lifecycle.*
+import androidx.lifecycle.*
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle

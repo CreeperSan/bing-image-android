@@ -1,6 +1,6 @@
 package com.creepersan.bingimage.database.dao
 
-import android.arch.persistence.room.*
+import androidx.room.*
 import com.creepersan.bingimage.database.COL_BINGIMAGE_ID
 import com.creepersan.bingimage.database.TB_BINGIMAGE
 import com.creepersan.bingimage.database.bean.BingImage

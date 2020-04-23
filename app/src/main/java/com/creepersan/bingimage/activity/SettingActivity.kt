@@ -4,8 +4,8 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.os.AsyncTask
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
@@ -123,7 +123,8 @@ class SettingActivity : BaseActivity() {
     private val mSingleSelectDialog by lazy {
         var onClickAction:(()->Unit)? = null
         val adapter = DialogSingleListAdapter()
-        val layoutManager = LinearLayoutManager(this)
+        val layoutManager =
+            LinearLayoutManager(this)
         val recyclerView = layoutInflater.inflate(R.layout.dialog_setting_single_list, null) as RecyclerView
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
@@ -346,7 +347,8 @@ class SettingActivity : BaseActivity() {
         })
     }
     private fun initRecyclerView(){
-        settingRecyclerView.layoutManager = LinearLayoutManager(this)
+        settingRecyclerView.layoutManager =
+            LinearLayoutManager(this)
         settingRecyclerView.adapter = mAdapter
     }
 

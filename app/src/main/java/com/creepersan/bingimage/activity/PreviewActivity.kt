@@ -1,16 +1,16 @@
 package com.creepersan.bingimage.activity
 
 import android.app.AlertDialog
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import android.graphics.drawable.Drawable
 import android.os.AsyncTask
 import android.os.Bundle
 import android.os.Environment
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.PopupMenu
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.Toolbar
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.widget.PopupMenu
+import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.widget.Toolbar
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
@@ -79,7 +79,8 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
         val dialogView = layoutInflater.inflate(R.layout.dialog_preview_download, null)
         val dialogRecyclerView = dialogView.findViewById<RecyclerView>(R.id.dialogPreviewDownloadRecyclerView)
         val dialogCheckBox = dialogView.findViewById<CheckBox>(R.id.dialogPreviewDownloadCheckBox)
-        dialogRecyclerView.layoutManager = LinearLayoutManager(this@PreviewActivity)
+        dialogRecyclerView.layoutManager =
+            LinearLayoutManager(this@PreviewActivity)
         dialogRecyclerView.adapter = DownloadResolutionAdapter(arrayListOf(
             BingImage.Resolution.P_1080_1920,
             BingImage.Resolution.P_768_1366,
