@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"/>
 
     <TextView
-            android:textColor="#000000"
+            android:textColor="?attr/appTextNormalColor"
             android:id="@+id/dialogSettingLongTaskText"
             android:layout_margin="8dp"
             tools:text="加载中"

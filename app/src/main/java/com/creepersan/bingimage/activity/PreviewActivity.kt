@@ -3,10 +3,7 @@ package com.creepersan.bingimage.activity
 import android.app.AlertDialog
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import android.graphics.drawable.Drawable
-import android.os.AsyncTask
 import android.os.Bundle
-import android.os.Environment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.RecyclerView
@@ -15,27 +12,16 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
-import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.bumptech.glide.request.target.CustomViewTarget
-import com.bumptech.glide.request.target.ImageViewTarget
-import com.bumptech.glide.request.target.Target
-import com.bumptech.glide.request.target.ViewTarget
-import com.bumptech.glide.request.transition.Transition
 import com.creepersan.bingimage.R
 import com.creepersan.bingimage.database.bean.BingImage
 import com.creepersan.bingimage.model.PreviewModel
-import com.creepersan.bingimage.network.request.BingUrlRequest
-import com.creepersan.bingimage.network.response.BingUrlResponse
 import com.creepersan.bingimage.utils.*
 import com.creepersan.bingimage.view.holder.PreviewDownloadResolutionItemHolder
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.android.synthetic.main.activity_preview.*
-import okhttp3.ResponseBody
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import java.io.File
 
 class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
 
@@ -77,49 +63,33 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
     }
     private val mDownloadDialog by lazy {
         val dialogView = layoutInflater.inflate(R.layout.dialog_preview_download, null)
-        val dialogRecyclerView = dialogView.findViewById<RecyclerView>(R.id.dialogPreviewDownloadRecyclerView)
         val dialogCheckBox = dialogView.findViewById<CheckBox>(R.id.dialogPreviewDownloadCheckBox)
-        dialogRecyclerView.layoutManager =
-            LinearLayoutManager(this@PreviewActivity)
-        dialogRecyclerView.adapter = DownloadResolutionAdapter(arrayListOf(
-            BingImage.Resolution.P_1080_1920,
-            BingImage.Resolution.P_768_1366,
-            BingImage.Resolution.P_768_1280,
-            BingImage.Resolution.P_720_1280,
-            BingImage.Resolution.P_480_800,
-            BingImage.Resolution.P_480_640,
-            BingImage.Resolution.P_240_400,
-            BingImage.Resolution.L_1920_1200,
-            BingImage.Resolution.L_1920_1080,
-            BingImage.Resolution.L_1366_768,
-            BingImage.Resolution.L_1280_720,
-            BingImage.Resolution.L_1024_768,
-            BingImage.Resolution.L_800_600,
-            BingImage.Resolution.L_800_480,
-            BingImage.Resolution.L_640_480,
-            BingImage.Resolution.L_400_240,
-            BingImage.Resolution.L_320_240
-        ))
         dialogCheckBox.setOnClickListener {
             mViewModel.setDownloadDialogDefaultNotDisplay(dialogCheckBox.isChecked)
         }
-        val alertDialog = AlertDialog.Builder(this)
-            .setView(dialogView)
-            .setPositiveButton(R.string.previewDownloadDialogPosButtonText.toResString()) { dialog, _ ->
-                downloadImage()
-                dialog.dismiss()
+        val bottomSheetDialog = BottomSheetDialog(this)
+        bottomSheetDialog.setContentView(dialogView)
+        val bottomSheetDialogBehavior = BottomSheetBehavior.from(dialogView.parent as View)
+        bottomSheetDialogBehavior.peekHeight = resources.displayMetrics.heightPixels
+        bottomSheetDialogBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback(){
+            override fun onSlide(bottomSheet: View, slideOffset: Float) {
+                if (slideOffset.toInt() == BottomSheetBehavior.STATE_HIDDEN){
+                    bottomSheetDialog.dismiss()
+                    bottomSheetDialogBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+                }
             }
-            .setNegativeButton(R.string.previewDownloadDialogNegButtonText.toResString()) { dialog, _ ->
-                dialog.dismiss()
+
+            override fun onStateChanged(bottomSheet: View, newState: Int) {
+
             }
-            .create()
-        val obj = object {
+
+        })
+        return@lazy object {
             fun showDialog(){
                 dialogCheckBox.isChecked = mViewModel.isDownloadDialogDefaultNotDisplay()
-                alertDialog.show()
+                bottomSheetDialog.show()
             }
         }
-        return@lazy obj
     }
 
     override val layoutID: Int = R.layout.activity_preview
@@ -184,39 +154,6 @@ class PreviewActivity : BaseActivity(), Toolbar.OnMenuItemClickListener {
         toast(R.string.previewToastDownload.toResString())
 
         application.downloadImage(bingimage, resolution)
-
-    }
-
-    /* Adapter */
-    private inner class DownloadResolutionAdapter(var resolutionList:ArrayList<BingImage.Resolution>) : RecyclerView.Adapter<PreviewDownloadResolutionItemHolder>(){
-        override fun onCreateViewHolder(p0: ViewGroup, p1: Int): PreviewDownloadResolutionItemHolder {
-            return PreviewDownloadResolutionItemHolder(this@PreviewActivity, p0)
-        }
-
-        override fun getItemCount(): Int {
-            return resolutionList.size
-        }
-
-        override fun onBindViewHolder(holder: PreviewDownloadResolutionItemHolder, pos: Int) {
-            val item = resolutionList[pos]
-            holder.setTitle(item.toResolutionStringID().toResString())
-            holder.setCheck(item == mViewModel.getDownloadResolution())
-            holder.setOnClickListener(View.OnClickListener {
-                var prevPos = 0
-                val newPos = holder.adapterPosition
-                resolutionList.forEachIndexed { index, item ->
-                    if (item == mViewModel.getDownloadResolution()){
-                        prevPos = index
-                        return@forEachIndexed
-                    }
-                }
-
-                mViewModel.setDownloadResolution(item)
-
-                notifyItemChanged(prevPos)
-                notifyItemChanged(newPos)
-            })
-        }
 
     }
 

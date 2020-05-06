@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 下面的是为了适配暗黑模式 -->
+    <attr name="appBackgroundColor" format="color"/>
+    <attr name="appTextNormalColor" format="color"/>
+    <attr name="appTextHintColor" format="color"/>
+    <attr name="appTextTitleColor" format="color"/>
+    <attr name="dialogTitleTextColor" format="color"/>
+    <attr name="dialogPosBtnTextColor" format="color"/>
+    <attr name="dialogNegBtnTextColor" format="color"/>
+    <attr name="dialogNeuBtnTextColor" format="color"/>
+    <attr name="toolbarBackgroundColor" format="color"/>
+    <attr name="dividerColor" format="color"/>
+
+</resources>

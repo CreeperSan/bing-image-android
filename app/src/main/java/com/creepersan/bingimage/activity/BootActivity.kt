@@ -14,11 +14,24 @@ class BootActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initInnerData()
         if (checkPermission()){
             checkFolderAndStart()
         }else{
             requestPermission()
         }
+    }
+
+    /**
+     * 初始数据的兼容
+     */
+    private fun initInnerData(){
+        // v1.0.0 - 下载分辨率现在已经可以多选，因此要删除旧的sp，并将旧的sp值写入到新的sp里面
+        if (config.hasDownloadResolutions()){
+            config.setDownloadResolutions(listOf(config.getDownloadResolution()))
+        }
+
+
     }
 
     private fun showAsFileError(){
@@ -51,6 +64,7 @@ class BootActivity : BaseActivity() {
         if (fileManager.initFolderPath()){
             finish()
             toActivity(MainActivity::class.java)
+            overridePendingTransition(R.anim.activity_fade_in, R.anim.activity_fade_out)
         }else{
             showAsFileError()
         }

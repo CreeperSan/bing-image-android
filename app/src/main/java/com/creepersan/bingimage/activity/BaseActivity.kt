@@ -7,6 +7,7 @@ import android.os.Parcelable
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
+import android.view.WindowManager
 import android.widget.Toast
 import com.creepersan.bingimage.R
 import com.creepersan.bingimage.application.BingImageApplication
@@ -41,6 +42,7 @@ abstract class BaseActivity : AppCompatActivity(){
         if(layoutID != Int.MIN_VALUE){
             setContentView(layoutID)
         }
+//        initImmersionBar()
     }
 
     /**
@@ -55,6 +57,25 @@ abstract class BaseActivity : AppCompatActivity(){
                 setTheme(R.style.AppTheme_Default)
             }
         }
+    }
+
+    /**
+     * 沉浸式状态栏相关
+     */
+    private fun initImmersionBar(){
+        val isFillContent = false
+        val colorRes = R.color.colorAccent
+
+        window.decorView.systemUiVisibility = if(isFillContent){
+            View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+        }else{
+            View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
+
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.statusBarColor = getColor(colorRes)
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {

@@ -30,10 +30,12 @@
     <string name="previewToastDownload">正在下载…</string>
 
     <string name="settingTitle">设置</string>
-    <string name="settingBasicCatalog">基本设置</string>
+    <string name="settingBasicCatalog">基本</string>
+    <string name="settingBasicUseOldGalleryTitle">使用旧版图库</string>
+    <string name="settingBasicUseOldGalleryContent">使用旧版本图库代替新版本图库（不推荐）</string>
     <string name="settingBasicDoubleClickTitle">双击退出</string>
     <string name="settingBasicDoubleClickContent">快速按下2次返回键退出应用</string>
-    <string name="settingViewSettingCatalog">预览设置</string>
+    <string name="settingViewSettingCatalog">预览</string>
     <string name="settingViewSettingViewResolutionTitle">首页分辨率</string>
     <string name="settingViewSettingViewPreviewTitle">预览页分辨率</string>
     <string name="settingViewSettingViewDownloadTitle">下载分辨率</string>
@@ -77,4 +79,7 @@
     <string name="randomMenuRefresh">刷新</string>
     <string name="mainDrawerSelectionRandom">手气不错</string>
     <string name="randomTitle">手气不错</string>
+
+    <string name="dialogResolutionSelectorHintSupportMultiSelect">请选择要设置的分辨率（支持多选）</string>
+    <string name="dialogResolutionSelectorHint">请选择要设置的分辨率</string>
 </resources>

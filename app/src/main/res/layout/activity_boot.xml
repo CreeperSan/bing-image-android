@@ -8,7 +8,7 @@
 
     <ImageView
             android:id="@+id/bootImage"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/ic_main_title"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

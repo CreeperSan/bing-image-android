@@ -4,12 +4,36 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="appBackgroundColor">#f3f3f3</item>
+        <item name="toolbarBackgroundColor">#ffffff</item>
+        <item name="dividerColor">#dddddd</item>
+        <item name="appTextNormalColor">#000000</item>
+        <item name="appTextHintColor">#666666</item>
+        <item name="appTextTitleColor">@color/colorAccent</item>
+        <item name="dialogTitleTextColor">#000000</item>
+
+        <item name="dialogPosBtnTextColor">#000000</item>
+        <item name="dialogNegBtnTextColor">#FF0000</item>
+        <item name="dialogNeuBtnTextColor">#999999</item>
     </style>
 
     <style name="AppTheme.Black" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorPrimaryDark">#282828</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="appBackgroundColor">#1d2125</item>
+        <item name="toolbarBackgroundColor">#282828</item>
+        <item name="dividerColor">#555555</item>
+        <item name="appTextNormalColor">#999999</item>
+        <item name="appTextHintColor">#555555</item>
+        <item name="appTextTitleColor">@color/colorAccent</item>
+        <item name="dialogTitleTextColor">#FFFFFF</item>
+
+        <item name="dialogPosBtnTextColor">#FFFFFF</item>
+        <item name="dialogNegBtnTextColor">#FF0000</item>
+        <item name="dialogNeuBtnTextColor">#999999</item>
     </style>
 
 </resources>

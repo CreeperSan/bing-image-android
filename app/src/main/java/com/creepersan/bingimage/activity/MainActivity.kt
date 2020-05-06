@@ -96,7 +96,11 @@ class MainActivity : BaseActivity() {
         mDrawerList.add(HeaderDrawerItem())
         // 图库
         mDrawerList.add(SelectionDrawerItem(R.drawable.ic_image, R.string.mainDrawerSelectionGallery.toResString(),{
-            toActivity(GalleryActivity::class.java)
+            toActivity(if (application.config.isUseOldGallery()){
+                GalleryActivity::class.java
+            }else{
+                GalleryNewActivity::class.java
+            })
             closeDrawer()
         }))
         // 随机
@@ -245,7 +249,7 @@ class MainActivity : BaseActivity() {
         snack(R.string.mainSnackPressAgainToExit.toResString())
     }
     private fun closeDrawer(){
-        mainDrawerLayout.closeDrawer(Gravity.START)
+        mainDrawerLayout.closeDrawer(GravityCompat.START)
     }
 
     /* ViewModel */

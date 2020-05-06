@@ -28,6 +28,7 @@
         <activity android:name=".activity.MainActivity" android:configChanges="uiMode"/>
         <activity android:name=".activity.PreviewActivity" android:theme="@style/AppTheme.Black" android:configChanges="uiMode"/>
         <activity android:name=".activity.GalleryActivity" android:configChanges="uiMode"/>
+        <activity android:name=".activity.GalleryNewActivity" android:configChanges="uiMode"/>
         <activity android:name=".activity.HelpActivity" android:configChanges="uiMode"/>
         <activity android:name=".activity.SettingActivity" android:configChanges="uiMode"/>
         <activity android:name=".activity.PermissionDescriptionActivity" android:configChanges="uiMode"/>

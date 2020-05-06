@@ -1,35 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:gravity="center"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/dialogPreviewDownloadChipGroup"
+        android:padding="8dp"
+        app:chipSpacingHorizontal="8dp"
+        app:chipSpacingVertical="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/dialogPreviewDownloadRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dialogPreviewDownloadChip1920x1200"
+            android:text="@string/previewResolution1920x1200"
+            android:checkable="true"
+            tools:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <ImageView
-            android:src="@color/diverColor"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dialogPreviewDownloadChip1920x1080"
+            android:checkable="true"
+            android:text="@string/previewResolution1920x1080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution1280x720"
+            android:id="@+id/dialogPreviewDownloadChip1280x720"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution1024x768"
+            android:id="@+id/dialogPreviewDownloadChip1024x768"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution800x600"
+            android:id="@+id/dialogPreviewDownloadChip800x600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution800x480"
+            android:id="@+id/dialogPreviewDownloadChip800x480"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution640x480"
+            android:id="@+id/dialogPreviewDownloadChip640x480"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution400x240"
+            android:id="@+id/dialogPreviewDownloadChip400x240"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution320x240"
+            android:id="@+id/dialogPreviewDownloadChip320x240"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution1080x1920"
+            android:id="@+id/dialogPreviewDownloadChip1080x1920"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution768x1366"
+            android:id="@+id/dialogPreviewDownloadChip768x1366"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution720x1280"
+            android:id="@+id/dialogPreviewDownloadChip720x1280"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution480x800"
+            android:id="@+id/dialogPreviewDownloadChip480x800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution480x640"
+            android:id="@+id/dialogPreviewDownloadChip480x640"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution240x400"
+            android:id="@+id/dialogPreviewDownloadChip240x400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:checkable="true"
+            android:text="@string/previewResolution240x320"
+            android:id="@+id/dialogPreviewDownloadChip240x320"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/dialogPreviewDownloadRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <Button
+        android:layout_margin="8dp"
+        android:textColor="?attr/appTextNormalColor"
+        android:text="@string/previewDownloadDialogPosButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <CheckBox
-            android:layout_marginTop="8dp"
-            android:id="@+id/dialogPreviewDownloadCheckBox"
-            android:text="@string/previewDownloadDialogCheckbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:layout_marginTop="8dp"
+        android:id="@+id/dialogPreviewDownloadCheckBox"
+        android:text="@string/previewDownloadDialogCheckbox"
+        android:textColor="?attr/appTextNormalColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/previewDownloadDialogHint"
-            android:id="@+id/dialogPreviewDownloadHintText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="?attr/appTextNormalColor"
+        android:text="@string/previewDownloadDialogHint"
+        android:id="@+id/dialogPreviewDownloadHintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

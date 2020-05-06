@@ -1,82 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="@color/colorPrimary"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/mainDrawerLayout"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <ImageView
-                android:clickable="true"
-                android:focusable="true"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:id="@+id/mainLeftIcon"
+        <FrameLayout
+                android:background="?attr/toolbarBackgroundColor"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/ic_main_drawer_accent"
-                android:padding="12dp"
-                android:layout_width="48dp"
-                android:layout_height="?attr/actionBarSize"/>
+                android:id="@+id/mainToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
 
-        <ImageView
-                app:layout_constraintBottom_toBottomOf="@id/mainLeftIcon"
-                app:layout_constraintTop_toTopOf="@id/mainLeftIcon"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_main_title"
-                android:layout_width="48dp"
-                android:padding="6dp"
-                android:layout_height="?attr/actionBarSize"/>
+            <ImageView
+                    android:id="@+id/mainLeftIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_main_drawer_accent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <!--<ImageView-->
-                <!--android:visibility="gone"-->
-                <!--android:clickable="true"-->
-                <!--android:focusable="true"-->
-                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
-                <!--android:id="@+id/mainRightIcon"-->
-                <!--app:layout_constraintTop_toTopOf="parent"-->
-                <!--app:layout_constraintEnd_toEndOf="parent"-->
-                <!--android:src="@drawable/ic_main_search"-->
-                <!--android:padding="12dp"-->
-                <!--android:layout_width="48dp"-->
-                <!--android:layout_height="?attr/actionBarSize"/>-->
+            <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_main_title"
+                    app:layout_constraintBottom_toBottomOf="@id/mainLeftIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mainLeftIcon" />
 
+        </FrameLayout>
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                 android:id="@+id/mainRefreshLayout"
-                app:layout_constraintTop_toBottomOf="@id/mainLeftIcon"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mainToolbarLayout">
+
             <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/mainRecyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"/>
+                    android:layout_height="0dp" />
 
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <ImageView
-                android:src="@drawable/shadow_toolbar"
-                app:layout_constraintTop_toTopOf="@id/mainRefreshLayout"
                 android:layout_width="match_parent"
-                android:layout_height="6dp"/>
+                android:layout_height="6dp"
+                android:src="@drawable/shadow_toolbar"
+                app:layout_constraintTop_toTopOf="@id/mainRefreshLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-            android:background="#FFFFFF"
-            android:layout_gravity="start"
+            android:background="?attr/appBackgroundColor"
             android:id="@+id/mainDrawerRecyclerView"
             android:layout_width="320dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

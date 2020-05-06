@@ -48,17 +48,18 @@
     <string name="previewToastDownload">Downloading …</string>
 
     <string name="settingTitle">Setting</string>
-    <string name="settingBasicCatalog">Basic Setting</string>
+    <string name="settingBasicCatalog">Basic</string>
+    <string name="settingBasicUseOldGalleryTitle">Use old version gallery</string>
+    <string name="settingBasicUseOldGalleryContent">Use old version gallery instand of new version（ NOT RECOMMAND ）</string>
     <string name="settingBasicDoubleClickTitle">Double tap to exit</string>
     <string name="settingBasicDoubleClickContent">Double tap back button to exit application</string>
-    <string name="settingViewSettingCatalog">View Setting</string>
+    <string name="settingViewSettingCatalog">View</string>
     <string name="settingViewSettingViewResolutionTitle">List image resolution</string>
     <string name="settingViewSettingViewPreviewTitle">Preview image resolution</string>
     <string name="settingViewSettingViewDownloadTitle">Download image resolution</string>
     <string name="settingViewDownloadHideDownloadDialogTitle">Don\'t show download dialog</string>
-    <string name="settingViewDownloadHideDownloadDialogContent">Hide download dialog, you can also turn it on by long press the download button
-    </string>
-    <string name="settingOtherCatalog">Other Setting</string>
+    <string name="settingViewDownloadHideDownloadDialogContent">Hide download dialog, you can also turn it on by long press the download button</string>
+    <string name="settingOtherCatalog">Other</string>
     <string name="settingOtherClearCacheSizeTitle">Cache maximum size </string>
     <string name="settingOtherClearCacheTitle">Clean cache</string>
     <string name="settingOtherClearCacheContent">Cache size : %sM</string>
@@ -96,4 +97,7 @@
     <string name="randomMenuRefresh">Refresh</string>
     <string name="mainDrawerSelectionRandom">Feels lucky</string>
     <string name="randomTitle">Feels Lucky</string>
+    
+    <string name="dialogResolutionSelectorHintSupportMultiSelect">请选择要设置的分辨率（支持多选）</string>
+    <string name="dialogResolutionSelectorHint">请选择要设置的分辨率</string>
 </resources>

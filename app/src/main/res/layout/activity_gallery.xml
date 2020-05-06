@@ -6,10 +6,10 @@
         android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-            android:background="@color/colorPrimary"
+            android:background="?attr/toolbarBackgroundColor"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/galleryToolbar"
-            app:titleTextColor="@color/colorAccent"
+            app:titleTextColor="?attr/appTextTitleColor"
             app:title="@string/galleryTitle"
             app:navigationIcon="@drawable/ic_back_accent"
             android:layout_width="match_parent"

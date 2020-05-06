@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/randomAppBarLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/randomToolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
-
-        <androidx.appcompat.widget.Toolbar
-                app:title="@string/randomTitle"
-                android:id="@+id/randomToolbar"
-                app:titleTextColor="@color/colorAccent"
-                app:navigationIcon="@drawable/ic_back_accent"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"/>
-
-    </com.google.android.material.appbar.AppBarLayout>
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_accent"
+            app:title="@string/randomTitle"
+            android:background="?attr/toolbarBackgroundColor"
+            app:titleTextColor="?attr/appTextTitleColor" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/randomSwipeRefresh"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/randomAppBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/randomToolbar">
 
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/randomRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
